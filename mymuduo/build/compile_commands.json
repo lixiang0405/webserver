@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Acceptor.cc.o -c /home/ubuntu/Cpp/mymuduo/src/Acceptor.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/Acceptor.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Buffer.cc.o -c /home/ubuntu/Cpp/mymuduo/src/Buffer.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/Buffer.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Channel.cc.o -c /home/ubuntu/Cpp/mymuduo/src/Channel.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/Channel.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/CurrentThread.cc.o -c /home/ubuntu/Cpp/mymuduo/src/CurrentThread.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/CurrentThread.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.o -c /home/ubuntu/Cpp/mymuduo/src/DefaultPoller.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/DefaultPoller.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EPollPoller.cc.o -c /home/ubuntu/Cpp/mymuduo/src/EPollPoller.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/EPollPoller.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EventLoop.cc.o -c /home/ubuntu/Cpp/mymuduo/src/EventLoop.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/EventLoop.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o -c /home/ubuntu/Cpp/mymuduo/src/EventLoopThread.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/EventLoopThread.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o -c /home/ubuntu/Cpp/mymuduo/src/EventLoopThreadPool.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/EventLoopThreadPool.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/InetAddress.cc.o -c /home/ubuntu/Cpp/mymuduo/src/InetAddress.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/InetAddress.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Logger.cc.o -c /home/ubuntu/Cpp/mymuduo/src/Logger.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/Logger.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Poller.cc.o -c /home/ubuntu/Cpp/mymuduo/src/Poller.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/Poller.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Socket.cc.o -c /home/ubuntu/Cpp/mymuduo/src/Socket.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/Socket.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o -c /home/ubuntu/Cpp/mymuduo/src/TcpConnection.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/TcpConnection.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/TcpServer.cc.o -c /home/ubuntu/Cpp/mymuduo/src/TcpServer.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/TcpServer.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/Thread.cc.o -c /home/ubuntu/Cpp/mymuduo/src/Thread.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/Thread.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -Dmymuduo_EXPORTS -I/home/ubuntu/Cpp/mymuduo/include -g -fPIC -std=gnu++11 -o src/CMakeFiles/mymuduo.dir/TimeStamp.cc.o -c /home/ubuntu/Cpp/mymuduo/src/TimeStamp.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/src/TimeStamp.cc"
+},
+{
+  "directory": "/home/ubuntu/Cpp/mymuduo/build",
+  "command": "/usr/bin/clang++ -I/home/ubuntu/Cpp/mymuduo/include -g -std=c++11 -Wall -std=gnu++11 -o example/CMakeFiles/testserver.dir/testserver.cc.o -c /home/ubuntu/Cpp/mymuduo/example/testserver.cc",
+  "file": "/home/ubuntu/Cpp/mymuduo/example/testserver.cc"
+}
+]

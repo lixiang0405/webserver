@@ -1,0 +1,8 @@
+/mnt/c/Users/lixia/webserver/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/lixia/webserver/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/lixia/webserver/build/src/CMakeFiles/mymuduo.dir
+/mnt/c/Users/lixia/webserver/build/src/CMakeFiles/edit_cache.dir
+/mnt/c/Users/lixia/webserver/build/src/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/lixia/webserver/build/example/CMakeFiles/testserver.dir
+/mnt/c/Users/lixia/webserver/build/example/CMakeFiles/edit_cache.dir
+/mnt/c/Users/lixia/webserver/build/example/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/testserver.dir/testserver.cc.o -o /mnt/c/Users/lixia/webserver/mymuduo/example/testserver  -Wl,-rpath,/mnt/c/Users/lixia/webserver/mymuduo/lib /mnt/c/Users/lixia/webserver/mymuduo/lib/libmymuduo.so -lpthread 
