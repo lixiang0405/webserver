@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/testserver.dir/testserver.cc.o -o /mnt/c/Users/lixia/webserver/webserver/example/testserver  -Wl,-rpath,/mnt/c/Users/lixia/webserver/webserver/lib /mnt/c/Users/lixia/webserver/webserver/lib/libwebserver.so -lpthread 
