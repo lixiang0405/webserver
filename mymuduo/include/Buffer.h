@@ -1,7 +1,9 @@
 #pragma once
 
+#include <cstring>
 #include<vector>
 #include<string>
+#include<string.h>
 
 class Buffer
 {
@@ -9,6 +11,7 @@ private:
     size_t readerIndex_;
     size_t writerIndex_;
     std::vector<char> buffer_;
+    const char* CRLF = "\r\n";
 
     char *begin(){ return &*buffer_.begin(); }
     const char *begin() const{ return &*buffer_.begin(); }
@@ -63,10 +66,39 @@ public:
     }
     char *beginWrite(){ return begin() + writerIndex_; }
     const char *beginWrite() const{ return begin() + writerIndex_; }
+    
     void append(const char *data, int len){
         makeSpace(len);
         std::copy(data, data + len, beginWrite());
         writerIndex_ += len;
+    }
+
+    void append(const char *data){
+        int len = std::strlen(data);
+        append(data, len);
+    }
+
+    const char* findCRLF() const {
+        const char* start = begin() + readerIndex_;
+        const char* end = begin() + writerIndex_;
+        // 确保有至少两个字符的空间
+        while (start < end - 1) {
+            if (start[0] == CRLF[0] && start[1] == CRLF[1]) {
+                return start;
+            }
+            start++;
+        }
+        return nullptr; // 没有找到
+    }
+
+    void retrieveUntil(const char *readEnd){
+        char* start = begin() + readerIndex_;
+        char* end = begin() + writerIndex_;
+        if(readEnd > end){
+            readEnd = end;
+        }
+        //start = readerIndex_ + readEnd - begin() - readerIndex_ + begin() = readEnd
+        readerIndex_ += (readEnd - start);
     }
 
     ssize_t readFd(int fd, int *saveErrno);

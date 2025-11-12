@@ -1,110 +1,134 @@
 [
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/Acceptor.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Acceptor.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/main.cpp.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/main.cpp",
+  "file": "/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/main.cpp",
+  "output": "CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/main.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/Acceptor.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Acceptor.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/Acceptor.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/Acceptor.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/Acceptor.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/Buffer.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Buffer.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/Buffer.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Buffer.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/Buffer.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/Buffer.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/Buffer.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/Channel.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Channel.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/Channel.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Channel.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/Channel.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/Channel.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/Channel.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/CurrentThread.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/CurrentThread.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/CurrentThread.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/CurrentThread.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/CurrentThread.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/CurrentThread.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/CurrentThread.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/DefaultPoller.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/DefaultPoller.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/DefaultPoller.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/DefaultPoller.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/DefaultPoller.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/DefaultPoller.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/EPollPoller.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EPollPoller.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/EPollPoller.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EPollPoller.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/EPollPoller.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/EPollPoller.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/EPollPoller.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/EventLoop.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EventLoop.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/EventLoop.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EventLoop.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/EventLoop.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/EventLoop.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/EventLoop.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/EventLoopThread.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EventLoopThread.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/EventLoopThread.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EventLoopThread.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/EventLoopThread.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/EventLoopThread.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EventLoopThreadPool.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/EventLoopThreadPool.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/EventLoopThreadPool.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/EventLoopThreadPool.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/EventLoopThreadPool.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/InetAddress.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/InetAddress.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/InetAddress.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/InetAddress.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/InetAddress.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/InetAddress.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/InetAddress.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/Logger.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Logger.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/Logger.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Logger.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/Logger.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/Logger.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/Logger.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/Poller.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Poller.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/Poller.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Poller.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/Poller.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/Poller.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/Poller.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/Socket.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Socket.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/Socket.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Socket.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/Socket.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/Socket.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/Socket.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/TcpConnection.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/TcpConnection.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/TcpConnection.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/TcpConnection.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/TcpConnection.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/TcpConnection.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/TcpServer.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/TcpServer.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/TcpServer.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/TcpServer.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/TcpServer.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/TcpServer.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/TcpServer.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/Thread.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Thread.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/Thread.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/Thread.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/Thread.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/Thread.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/Thread.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/src",
-  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -fPIC -o CMakeFiles/mymuduo.dir/TimeStamp.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/TimeStamp.cc",
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/mymuduo/src/TimeStamp.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/src/TimeStamp.cc",
   "file": "/mnt/c/Users/lixia/webserver/mymuduo/src/TimeStamp.cc",
-  "output": "src/CMakeFiles/mymuduo.dir/TimeStamp.cc.o"
+  "output": "CMakeFiles/webserver.dir/mymuduo/src/TimeStamp.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/lixia/webserver/build/example",
-  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver/mymuduo/include -g -std=gnu++11 -std=c++11 -Wall -o CMakeFiles/testserver.dir/testserver.cc.o -c /mnt/c/Users/lixia/webserver/mymuduo/example/testserver.cc",
-  "file": "/mnt/c/Users/lixia/webserver/mymuduo/example/testserver.cc",
-  "output": "example/CMakeFiles/testserver.dir/testserver.cc.o"
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/http/HttpContext.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpContext.cc",
+  "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpContext.cc",
+  "output": "CMakeFiles/webserver.dir/HttpServer/src/http/HttpContext.cc.o"
+},
+{
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpRequest.cc",
+  "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpRequest.cc",
+  "output": "CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o"
+},
+{
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpResponse.cc",
+  "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpResponse.cc",
+  "output": "CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.o"
+},
+{
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpServer.cc",
+  "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpServer.cc",
+  "output": "CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.o"
 }
 ]

@@ -1,3 +1,0 @@
-/mnt/c/Users/lixia/webserver/webserver/build/CMakeFiles/webserver.dir
-/mnt/c/Users/lixia/webserver/webserver/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/lixia/webserver/webserver/build/CMakeFiles/rebuild_cache.dir

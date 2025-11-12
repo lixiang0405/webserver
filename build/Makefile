@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/lixia/webserver/mymuduo
+CMAKE_SOURCE_DIR = /mnt/c/Users/lixia/webserver
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/lixia/webserver/build
@@ -117,30 +117,545 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mymuduo
+# Target rules for targets named webserver
 
 # Build rule for target.
-mymuduo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymuduo
-.PHONY : mymuduo
+webserver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 webserver
+.PHONY : webserver
 
 # fast build rule for target.
-mymuduo/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/build
-.PHONY : mymuduo/fast
+webserver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/build
+.PHONY : webserver/fast
 
-#=============================================================================
-# Target rules for targets named testserver
+HttpServer/src/http/HttpContext.o: HttpServer/src/http/HttpContext.cc.o
+.PHONY : HttpServer/src/http/HttpContext.o
 
-# Build rule for target.
-testserver: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testserver
-.PHONY : testserver
+# target to build an object file
+HttpServer/src/http/HttpContext.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpContext.cc.o
+.PHONY : HttpServer/src/http/HttpContext.cc.o
 
-# fast build rule for target.
-testserver/fast:
-	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testserver.dir/build.make example/CMakeFiles/testserver.dir/build
-.PHONY : testserver/fast
+HttpServer/src/http/HttpContext.i: HttpServer/src/http/HttpContext.cc.i
+.PHONY : HttpServer/src/http/HttpContext.i
+
+# target to preprocess a source file
+HttpServer/src/http/HttpContext.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpContext.cc.i
+.PHONY : HttpServer/src/http/HttpContext.cc.i
+
+HttpServer/src/http/HttpContext.s: HttpServer/src/http/HttpContext.cc.s
+.PHONY : HttpServer/src/http/HttpContext.s
+
+# target to generate assembly for a file
+HttpServer/src/http/HttpContext.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpContext.cc.s
+.PHONY : HttpServer/src/http/HttpContext.cc.s
+
+HttpServer/src/http/HttpRequest.o: HttpServer/src/http/HttpRequest.cc.o
+.PHONY : HttpServer/src/http/HttpRequest.o
+
+# target to build an object file
+HttpServer/src/http/HttpRequest.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o
+.PHONY : HttpServer/src/http/HttpRequest.cc.o
+
+HttpServer/src/http/HttpRequest.i: HttpServer/src/http/HttpRequest.cc.i
+.PHONY : HttpServer/src/http/HttpRequest.i
+
+# target to preprocess a source file
+HttpServer/src/http/HttpRequest.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.i
+.PHONY : HttpServer/src/http/HttpRequest.cc.i
+
+HttpServer/src/http/HttpRequest.s: HttpServer/src/http/HttpRequest.cc.s
+.PHONY : HttpServer/src/http/HttpRequest.s
+
+# target to generate assembly for a file
+HttpServer/src/http/HttpRequest.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.s
+.PHONY : HttpServer/src/http/HttpRequest.cc.s
+
+HttpServer/src/http/HttpResponse.o: HttpServer/src/http/HttpResponse.cc.o
+.PHONY : HttpServer/src/http/HttpResponse.o
+
+# target to build an object file
+HttpServer/src/http/HttpResponse.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.o
+.PHONY : HttpServer/src/http/HttpResponse.cc.o
+
+HttpServer/src/http/HttpResponse.i: HttpServer/src/http/HttpResponse.cc.i
+.PHONY : HttpServer/src/http/HttpResponse.i
+
+# target to preprocess a source file
+HttpServer/src/http/HttpResponse.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.i
+.PHONY : HttpServer/src/http/HttpResponse.cc.i
+
+HttpServer/src/http/HttpResponse.s: HttpServer/src/http/HttpResponse.cc.s
+.PHONY : HttpServer/src/http/HttpResponse.s
+
+# target to generate assembly for a file
+HttpServer/src/http/HttpResponse.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.s
+.PHONY : HttpServer/src/http/HttpResponse.cc.s
+
+HttpServer/src/http/HttpServer.o: HttpServer/src/http/HttpServer.cc.o
+.PHONY : HttpServer/src/http/HttpServer.o
+
+# target to build an object file
+HttpServer/src/http/HttpServer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.o
+.PHONY : HttpServer/src/http/HttpServer.cc.o
+
+HttpServer/src/http/HttpServer.i: HttpServer/src/http/HttpServer.cc.i
+.PHONY : HttpServer/src/http/HttpServer.i
+
+# target to preprocess a source file
+HttpServer/src/http/HttpServer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.i
+.PHONY : HttpServer/src/http/HttpServer.cc.i
+
+HttpServer/src/http/HttpServer.s: HttpServer/src/http/HttpServer.cc.s
+.PHONY : HttpServer/src/http/HttpServer.s
+
+# target to generate assembly for a file
+HttpServer/src/http/HttpServer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.s
+.PHONY : HttpServer/src/http/HttpServer.cc.s
+
+WebApps/yiyiCatServer/src/main.o: WebApps/yiyiCatServer/src/main.cpp.o
+.PHONY : WebApps/yiyiCatServer/src/main.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/main.cpp.o
+.PHONY : WebApps/yiyiCatServer/src/main.cpp.o
+
+WebApps/yiyiCatServer/src/main.i: WebApps/yiyiCatServer/src/main.cpp.i
+.PHONY : WebApps/yiyiCatServer/src/main.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/main.cpp.i
+.PHONY : WebApps/yiyiCatServer/src/main.cpp.i
+
+WebApps/yiyiCatServer/src/main.s: WebApps/yiyiCatServer/src/main.cpp.s
+.PHONY : WebApps/yiyiCatServer/src/main.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/main.cpp.s
+.PHONY : WebApps/yiyiCatServer/src/main.cpp.s
+
+mymuduo/src/Acceptor.o: mymuduo/src/Acceptor.cc.o
+.PHONY : mymuduo/src/Acceptor.o
+
+# target to build an object file
+mymuduo/src/Acceptor.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Acceptor.cc.o
+.PHONY : mymuduo/src/Acceptor.cc.o
+
+mymuduo/src/Acceptor.i: mymuduo/src/Acceptor.cc.i
+.PHONY : mymuduo/src/Acceptor.i
+
+# target to preprocess a source file
+mymuduo/src/Acceptor.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Acceptor.cc.i
+.PHONY : mymuduo/src/Acceptor.cc.i
+
+mymuduo/src/Acceptor.s: mymuduo/src/Acceptor.cc.s
+.PHONY : mymuduo/src/Acceptor.s
+
+# target to generate assembly for a file
+mymuduo/src/Acceptor.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Acceptor.cc.s
+.PHONY : mymuduo/src/Acceptor.cc.s
+
+mymuduo/src/Buffer.o: mymuduo/src/Buffer.cc.o
+.PHONY : mymuduo/src/Buffer.o
+
+# target to build an object file
+mymuduo/src/Buffer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Buffer.cc.o
+.PHONY : mymuduo/src/Buffer.cc.o
+
+mymuduo/src/Buffer.i: mymuduo/src/Buffer.cc.i
+.PHONY : mymuduo/src/Buffer.i
+
+# target to preprocess a source file
+mymuduo/src/Buffer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Buffer.cc.i
+.PHONY : mymuduo/src/Buffer.cc.i
+
+mymuduo/src/Buffer.s: mymuduo/src/Buffer.cc.s
+.PHONY : mymuduo/src/Buffer.s
+
+# target to generate assembly for a file
+mymuduo/src/Buffer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Buffer.cc.s
+.PHONY : mymuduo/src/Buffer.cc.s
+
+mymuduo/src/Channel.o: mymuduo/src/Channel.cc.o
+.PHONY : mymuduo/src/Channel.o
+
+# target to build an object file
+mymuduo/src/Channel.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Channel.cc.o
+.PHONY : mymuduo/src/Channel.cc.o
+
+mymuduo/src/Channel.i: mymuduo/src/Channel.cc.i
+.PHONY : mymuduo/src/Channel.i
+
+# target to preprocess a source file
+mymuduo/src/Channel.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Channel.cc.i
+.PHONY : mymuduo/src/Channel.cc.i
+
+mymuduo/src/Channel.s: mymuduo/src/Channel.cc.s
+.PHONY : mymuduo/src/Channel.s
+
+# target to generate assembly for a file
+mymuduo/src/Channel.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Channel.cc.s
+.PHONY : mymuduo/src/Channel.cc.s
+
+mymuduo/src/CurrentThread.o: mymuduo/src/CurrentThread.cc.o
+.PHONY : mymuduo/src/CurrentThread.o
+
+# target to build an object file
+mymuduo/src/CurrentThread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/CurrentThread.cc.o
+.PHONY : mymuduo/src/CurrentThread.cc.o
+
+mymuduo/src/CurrentThread.i: mymuduo/src/CurrentThread.cc.i
+.PHONY : mymuduo/src/CurrentThread.i
+
+# target to preprocess a source file
+mymuduo/src/CurrentThread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/CurrentThread.cc.i
+.PHONY : mymuduo/src/CurrentThread.cc.i
+
+mymuduo/src/CurrentThread.s: mymuduo/src/CurrentThread.cc.s
+.PHONY : mymuduo/src/CurrentThread.s
+
+# target to generate assembly for a file
+mymuduo/src/CurrentThread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/CurrentThread.cc.s
+.PHONY : mymuduo/src/CurrentThread.cc.s
+
+mymuduo/src/DefaultPoller.o: mymuduo/src/DefaultPoller.cc.o
+.PHONY : mymuduo/src/DefaultPoller.o
+
+# target to build an object file
+mymuduo/src/DefaultPoller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/DefaultPoller.cc.o
+.PHONY : mymuduo/src/DefaultPoller.cc.o
+
+mymuduo/src/DefaultPoller.i: mymuduo/src/DefaultPoller.cc.i
+.PHONY : mymuduo/src/DefaultPoller.i
+
+# target to preprocess a source file
+mymuduo/src/DefaultPoller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/DefaultPoller.cc.i
+.PHONY : mymuduo/src/DefaultPoller.cc.i
+
+mymuduo/src/DefaultPoller.s: mymuduo/src/DefaultPoller.cc.s
+.PHONY : mymuduo/src/DefaultPoller.s
+
+# target to generate assembly for a file
+mymuduo/src/DefaultPoller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/DefaultPoller.cc.s
+.PHONY : mymuduo/src/DefaultPoller.cc.s
+
+mymuduo/src/EPollPoller.o: mymuduo/src/EPollPoller.cc.o
+.PHONY : mymuduo/src/EPollPoller.o
+
+# target to build an object file
+mymuduo/src/EPollPoller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EPollPoller.cc.o
+.PHONY : mymuduo/src/EPollPoller.cc.o
+
+mymuduo/src/EPollPoller.i: mymuduo/src/EPollPoller.cc.i
+.PHONY : mymuduo/src/EPollPoller.i
+
+# target to preprocess a source file
+mymuduo/src/EPollPoller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EPollPoller.cc.i
+.PHONY : mymuduo/src/EPollPoller.cc.i
+
+mymuduo/src/EPollPoller.s: mymuduo/src/EPollPoller.cc.s
+.PHONY : mymuduo/src/EPollPoller.s
+
+# target to generate assembly for a file
+mymuduo/src/EPollPoller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EPollPoller.cc.s
+.PHONY : mymuduo/src/EPollPoller.cc.s
+
+mymuduo/src/EventLoop.o: mymuduo/src/EventLoop.cc.o
+.PHONY : mymuduo/src/EventLoop.o
+
+# target to build an object file
+mymuduo/src/EventLoop.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoop.cc.o
+.PHONY : mymuduo/src/EventLoop.cc.o
+
+mymuduo/src/EventLoop.i: mymuduo/src/EventLoop.cc.i
+.PHONY : mymuduo/src/EventLoop.i
+
+# target to preprocess a source file
+mymuduo/src/EventLoop.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoop.cc.i
+.PHONY : mymuduo/src/EventLoop.cc.i
+
+mymuduo/src/EventLoop.s: mymuduo/src/EventLoop.cc.s
+.PHONY : mymuduo/src/EventLoop.s
+
+# target to generate assembly for a file
+mymuduo/src/EventLoop.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoop.cc.s
+.PHONY : mymuduo/src/EventLoop.cc.s
+
+mymuduo/src/EventLoopThread.o: mymuduo/src/EventLoopThread.cc.o
+.PHONY : mymuduo/src/EventLoopThread.o
+
+# target to build an object file
+mymuduo/src/EventLoopThread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoopThread.cc.o
+.PHONY : mymuduo/src/EventLoopThread.cc.o
+
+mymuduo/src/EventLoopThread.i: mymuduo/src/EventLoopThread.cc.i
+.PHONY : mymuduo/src/EventLoopThread.i
+
+# target to preprocess a source file
+mymuduo/src/EventLoopThread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoopThread.cc.i
+.PHONY : mymuduo/src/EventLoopThread.cc.i
+
+mymuduo/src/EventLoopThread.s: mymuduo/src/EventLoopThread.cc.s
+.PHONY : mymuduo/src/EventLoopThread.s
+
+# target to generate assembly for a file
+mymuduo/src/EventLoopThread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoopThread.cc.s
+.PHONY : mymuduo/src/EventLoopThread.cc.s
+
+mymuduo/src/EventLoopThreadPool.o: mymuduo/src/EventLoopThreadPool.cc.o
+.PHONY : mymuduo/src/EventLoopThreadPool.o
+
+# target to build an object file
+mymuduo/src/EventLoopThreadPool.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoopThreadPool.cc.o
+.PHONY : mymuduo/src/EventLoopThreadPool.cc.o
+
+mymuduo/src/EventLoopThreadPool.i: mymuduo/src/EventLoopThreadPool.cc.i
+.PHONY : mymuduo/src/EventLoopThreadPool.i
+
+# target to preprocess a source file
+mymuduo/src/EventLoopThreadPool.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoopThreadPool.cc.i
+.PHONY : mymuduo/src/EventLoopThreadPool.cc.i
+
+mymuduo/src/EventLoopThreadPool.s: mymuduo/src/EventLoopThreadPool.cc.s
+.PHONY : mymuduo/src/EventLoopThreadPool.s
+
+# target to generate assembly for a file
+mymuduo/src/EventLoopThreadPool.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/EventLoopThreadPool.cc.s
+.PHONY : mymuduo/src/EventLoopThreadPool.cc.s
+
+mymuduo/src/InetAddress.o: mymuduo/src/InetAddress.cc.o
+.PHONY : mymuduo/src/InetAddress.o
+
+# target to build an object file
+mymuduo/src/InetAddress.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/InetAddress.cc.o
+.PHONY : mymuduo/src/InetAddress.cc.o
+
+mymuduo/src/InetAddress.i: mymuduo/src/InetAddress.cc.i
+.PHONY : mymuduo/src/InetAddress.i
+
+# target to preprocess a source file
+mymuduo/src/InetAddress.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/InetAddress.cc.i
+.PHONY : mymuduo/src/InetAddress.cc.i
+
+mymuduo/src/InetAddress.s: mymuduo/src/InetAddress.cc.s
+.PHONY : mymuduo/src/InetAddress.s
+
+# target to generate assembly for a file
+mymuduo/src/InetAddress.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/InetAddress.cc.s
+.PHONY : mymuduo/src/InetAddress.cc.s
+
+mymuduo/src/Logger.o: mymuduo/src/Logger.cc.o
+.PHONY : mymuduo/src/Logger.o
+
+# target to build an object file
+mymuduo/src/Logger.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Logger.cc.o
+.PHONY : mymuduo/src/Logger.cc.o
+
+mymuduo/src/Logger.i: mymuduo/src/Logger.cc.i
+.PHONY : mymuduo/src/Logger.i
+
+# target to preprocess a source file
+mymuduo/src/Logger.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Logger.cc.i
+.PHONY : mymuduo/src/Logger.cc.i
+
+mymuduo/src/Logger.s: mymuduo/src/Logger.cc.s
+.PHONY : mymuduo/src/Logger.s
+
+# target to generate assembly for a file
+mymuduo/src/Logger.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Logger.cc.s
+.PHONY : mymuduo/src/Logger.cc.s
+
+mymuduo/src/Poller.o: mymuduo/src/Poller.cc.o
+.PHONY : mymuduo/src/Poller.o
+
+# target to build an object file
+mymuduo/src/Poller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Poller.cc.o
+.PHONY : mymuduo/src/Poller.cc.o
+
+mymuduo/src/Poller.i: mymuduo/src/Poller.cc.i
+.PHONY : mymuduo/src/Poller.i
+
+# target to preprocess a source file
+mymuduo/src/Poller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Poller.cc.i
+.PHONY : mymuduo/src/Poller.cc.i
+
+mymuduo/src/Poller.s: mymuduo/src/Poller.cc.s
+.PHONY : mymuduo/src/Poller.s
+
+# target to generate assembly for a file
+mymuduo/src/Poller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Poller.cc.s
+.PHONY : mymuduo/src/Poller.cc.s
+
+mymuduo/src/Socket.o: mymuduo/src/Socket.cc.o
+.PHONY : mymuduo/src/Socket.o
+
+# target to build an object file
+mymuduo/src/Socket.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Socket.cc.o
+.PHONY : mymuduo/src/Socket.cc.o
+
+mymuduo/src/Socket.i: mymuduo/src/Socket.cc.i
+.PHONY : mymuduo/src/Socket.i
+
+# target to preprocess a source file
+mymuduo/src/Socket.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Socket.cc.i
+.PHONY : mymuduo/src/Socket.cc.i
+
+mymuduo/src/Socket.s: mymuduo/src/Socket.cc.s
+.PHONY : mymuduo/src/Socket.s
+
+# target to generate assembly for a file
+mymuduo/src/Socket.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Socket.cc.s
+.PHONY : mymuduo/src/Socket.cc.s
+
+mymuduo/src/TcpConnection.o: mymuduo/src/TcpConnection.cc.o
+.PHONY : mymuduo/src/TcpConnection.o
+
+# target to build an object file
+mymuduo/src/TcpConnection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TcpConnection.cc.o
+.PHONY : mymuduo/src/TcpConnection.cc.o
+
+mymuduo/src/TcpConnection.i: mymuduo/src/TcpConnection.cc.i
+.PHONY : mymuduo/src/TcpConnection.i
+
+# target to preprocess a source file
+mymuduo/src/TcpConnection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TcpConnection.cc.i
+.PHONY : mymuduo/src/TcpConnection.cc.i
+
+mymuduo/src/TcpConnection.s: mymuduo/src/TcpConnection.cc.s
+.PHONY : mymuduo/src/TcpConnection.s
+
+# target to generate assembly for a file
+mymuduo/src/TcpConnection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TcpConnection.cc.s
+.PHONY : mymuduo/src/TcpConnection.cc.s
+
+mymuduo/src/TcpServer.o: mymuduo/src/TcpServer.cc.o
+.PHONY : mymuduo/src/TcpServer.o
+
+# target to build an object file
+mymuduo/src/TcpServer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TcpServer.cc.o
+.PHONY : mymuduo/src/TcpServer.cc.o
+
+mymuduo/src/TcpServer.i: mymuduo/src/TcpServer.cc.i
+.PHONY : mymuduo/src/TcpServer.i
+
+# target to preprocess a source file
+mymuduo/src/TcpServer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TcpServer.cc.i
+.PHONY : mymuduo/src/TcpServer.cc.i
+
+mymuduo/src/TcpServer.s: mymuduo/src/TcpServer.cc.s
+.PHONY : mymuduo/src/TcpServer.s
+
+# target to generate assembly for a file
+mymuduo/src/TcpServer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TcpServer.cc.s
+.PHONY : mymuduo/src/TcpServer.cc.s
+
+mymuduo/src/Thread.o: mymuduo/src/Thread.cc.o
+.PHONY : mymuduo/src/Thread.o
+
+# target to build an object file
+mymuduo/src/Thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Thread.cc.o
+.PHONY : mymuduo/src/Thread.cc.o
+
+mymuduo/src/Thread.i: mymuduo/src/Thread.cc.i
+.PHONY : mymuduo/src/Thread.i
+
+# target to preprocess a source file
+mymuduo/src/Thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Thread.cc.i
+.PHONY : mymuduo/src/Thread.cc.i
+
+mymuduo/src/Thread.s: mymuduo/src/Thread.cc.s
+.PHONY : mymuduo/src/Thread.s
+
+# target to generate assembly for a file
+mymuduo/src/Thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/Thread.cc.s
+.PHONY : mymuduo/src/Thread.cc.s
+
+mymuduo/src/TimeStamp.o: mymuduo/src/TimeStamp.cc.o
+.PHONY : mymuduo/src/TimeStamp.o
+
+# target to build an object file
+mymuduo/src/TimeStamp.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TimeStamp.cc.o
+.PHONY : mymuduo/src/TimeStamp.cc.o
+
+mymuduo/src/TimeStamp.i: mymuduo/src/TimeStamp.cc.i
+.PHONY : mymuduo/src/TimeStamp.i
+
+# target to preprocess a source file
+mymuduo/src/TimeStamp.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TimeStamp.cc.i
+.PHONY : mymuduo/src/TimeStamp.cc.i
+
+mymuduo/src/TimeStamp.s: mymuduo/src/TimeStamp.cc.s
+.PHONY : mymuduo/src/TimeStamp.s
+
+# target to generate assembly for a file
+mymuduo/src/TimeStamp.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/mymuduo/src/TimeStamp.cc.s
+.PHONY : mymuduo/src/TimeStamp.cc.s
 
 # Help Target
 help:
@@ -150,8 +665,73 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mymuduo"
-	@echo "... testserver"
+	@echo "... webserver"
+	@echo "... HttpServer/src/http/HttpContext.o"
+	@echo "... HttpServer/src/http/HttpContext.i"
+	@echo "... HttpServer/src/http/HttpContext.s"
+	@echo "... HttpServer/src/http/HttpRequest.o"
+	@echo "... HttpServer/src/http/HttpRequest.i"
+	@echo "... HttpServer/src/http/HttpRequest.s"
+	@echo "... HttpServer/src/http/HttpResponse.o"
+	@echo "... HttpServer/src/http/HttpResponse.i"
+	@echo "... HttpServer/src/http/HttpResponse.s"
+	@echo "... HttpServer/src/http/HttpServer.o"
+	@echo "... HttpServer/src/http/HttpServer.i"
+	@echo "... HttpServer/src/http/HttpServer.s"
+	@echo "... WebApps/yiyiCatServer/src/main.o"
+	@echo "... WebApps/yiyiCatServer/src/main.i"
+	@echo "... WebApps/yiyiCatServer/src/main.s"
+	@echo "... mymuduo/src/Acceptor.o"
+	@echo "... mymuduo/src/Acceptor.i"
+	@echo "... mymuduo/src/Acceptor.s"
+	@echo "... mymuduo/src/Buffer.o"
+	@echo "... mymuduo/src/Buffer.i"
+	@echo "... mymuduo/src/Buffer.s"
+	@echo "... mymuduo/src/Channel.o"
+	@echo "... mymuduo/src/Channel.i"
+	@echo "... mymuduo/src/Channel.s"
+	@echo "... mymuduo/src/CurrentThread.o"
+	@echo "... mymuduo/src/CurrentThread.i"
+	@echo "... mymuduo/src/CurrentThread.s"
+	@echo "... mymuduo/src/DefaultPoller.o"
+	@echo "... mymuduo/src/DefaultPoller.i"
+	@echo "... mymuduo/src/DefaultPoller.s"
+	@echo "... mymuduo/src/EPollPoller.o"
+	@echo "... mymuduo/src/EPollPoller.i"
+	@echo "... mymuduo/src/EPollPoller.s"
+	@echo "... mymuduo/src/EventLoop.o"
+	@echo "... mymuduo/src/EventLoop.i"
+	@echo "... mymuduo/src/EventLoop.s"
+	@echo "... mymuduo/src/EventLoopThread.o"
+	@echo "... mymuduo/src/EventLoopThread.i"
+	@echo "... mymuduo/src/EventLoopThread.s"
+	@echo "... mymuduo/src/EventLoopThreadPool.o"
+	@echo "... mymuduo/src/EventLoopThreadPool.i"
+	@echo "... mymuduo/src/EventLoopThreadPool.s"
+	@echo "... mymuduo/src/InetAddress.o"
+	@echo "... mymuduo/src/InetAddress.i"
+	@echo "... mymuduo/src/InetAddress.s"
+	@echo "... mymuduo/src/Logger.o"
+	@echo "... mymuduo/src/Logger.i"
+	@echo "... mymuduo/src/Logger.s"
+	@echo "... mymuduo/src/Poller.o"
+	@echo "... mymuduo/src/Poller.i"
+	@echo "... mymuduo/src/Poller.s"
+	@echo "... mymuduo/src/Socket.o"
+	@echo "... mymuduo/src/Socket.i"
+	@echo "... mymuduo/src/Socket.s"
+	@echo "... mymuduo/src/TcpConnection.o"
+	@echo "... mymuduo/src/TcpConnection.i"
+	@echo "... mymuduo/src/TcpConnection.s"
+	@echo "... mymuduo/src/TcpServer.o"
+	@echo "... mymuduo/src/TcpServer.i"
+	@echo "... mymuduo/src/TcpServer.s"
+	@echo "... mymuduo/src/Thread.o"
+	@echo "... mymuduo/src/Thread.i"
+	@echo "... mymuduo/src/Thread.s"
+	@echo "... mymuduo/src/TimeStamp.o"
+	@echo "... mymuduo/src/TimeStamp.i"
+	@echo "... mymuduo/src/TimeStamp.s"
 .PHONY : help
 
 
