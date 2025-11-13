@@ -53,6 +53,10 @@ void HttpRequest::setQueryParameters(const char* start, const char* end) {
     }
 }
 
+void HttpRequest::setPathParameters(const std::string &key, const std::string &value) {
+    pathParameters_[key] = value;
+}
+
 void HttpRequest::addHeader(const char* start, const char* colon, const char* end){
     std::string key = std::string(start, colon);
     std::string value = std::string(colon + 1, end);

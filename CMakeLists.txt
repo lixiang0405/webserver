@@ -13,6 +13,8 @@ include_directories(
     ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/HttpServer/include/http
+    ${PROJECT_SOURCE_DIR}/HttpServer/include/router
+    ${PROJECT_SOURCE_DIR}/HttpServer/include/session
     ${PROJECT_SOURCE_DIR}/mymuduo/include
     ${PROJECT_SOURCE_DIR}/WebApps/yiyiCatServer/include
     /usr/include/mysql-cppconn-8

@@ -5,18 +5,15 @@
 
 
 class HttpContext{
-private:
+public:
     enum HttpRequestRarseState {
         kExpectRequestLine = 0,  // 等待解析请求行
         kExpectHeaders,      // 等待解析头部
         kExpectBody,         // 等待解析请求体
         kGotAll             // 解析完成
     };
-    HttpRequestRarseState state_;
-    HttpRequest request_;
-public:
     HttpContext(/* args */): state_(kExpectRequestLine){}
-    ~HttpContext();
+    
     bool gotAll() const { return state_ == kGotAll;  }
     void reset(){
         state_ = kExpectRequestLine;
@@ -28,4 +25,7 @@ public:
     bool parseRequest(Buffer *buf, TimeStamp receiveTime);
     bool processRequestLine(const char *begin, const char *end);
     
+private:
+    HttpRequestRarseState state_;
+    HttpRequest request_;
 };

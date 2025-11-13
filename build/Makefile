@@ -225,6 +225,30 @@ HttpServer/src/http/HttpServer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.s
 .PHONY : HttpServer/src/http/HttpServer.cc.s
 
+HttpServer/src/router/Router.o: HttpServer/src/router/Router.cc.o
+.PHONY : HttpServer/src/router/Router.o
+
+# target to build an object file
+HttpServer/src/router/Router.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o
+.PHONY : HttpServer/src/router/Router.cc.o
+
+HttpServer/src/router/Router.i: HttpServer/src/router/Router.cc.i
+.PHONY : HttpServer/src/router/Router.i
+
+# target to preprocess a source file
+HttpServer/src/router/Router.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.i
+.PHONY : HttpServer/src/router/Router.cc.i
+
+HttpServer/src/router/Router.s: HttpServer/src/router/Router.cc.s
+.PHONY : HttpServer/src/router/Router.s
+
+# target to generate assembly for a file
+HttpServer/src/router/Router.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.s
+.PHONY : HttpServer/src/router/Router.cc.s
+
 WebApps/yiyiCatServer/src/main.o: WebApps/yiyiCatServer/src/main.cpp.o
 .PHONY : WebApps/yiyiCatServer/src/main.o
 
@@ -678,6 +702,9 @@ help:
 	@echo "... HttpServer/src/http/HttpServer.o"
 	@echo "... HttpServer/src/http/HttpServer.i"
 	@echo "... HttpServer/src/http/HttpServer.s"
+	@echo "... HttpServer/src/router/Router.o"
+	@echo "... HttpServer/src/router/Router.i"
+	@echo "... HttpServer/src/router/Router.s"
 	@echo "... WebApps/yiyiCatServer/src/main.o"
 	@echo "... WebApps/yiyiCatServer/src/main.i"
 	@echo "... WebApps/yiyiCatServer/src/main.s"

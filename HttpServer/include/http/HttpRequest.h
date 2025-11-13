@@ -8,26 +8,14 @@
 #include <cstdint>
 
 
-enum class Method{ GET = 0, POST, PUT, DELETE, HEAD, INVALID};
 
 class HttpRequest{
-private:
-    Method                                       method_; // 请求方法
-    std::string                                  version_; // http版本
-    std::string                                  path_; // 请求路径
-    std::unordered_map<std::string, std::string> pathParameters_; // 路径参数
-    std::unordered_map<std::string, std::string> queryParameters_; // 查询参数
-    TimeStamp                                    receiveTime_; // 接收时间
-    std::map<std::string, std::string>           headers_; // 请求头
-    std::string                                  content_; // 请求体
-    uint64_t                                     contentLength_ { 0 }; // 请求体长度
 public:
+    enum class Method{ GET = 0, POST, PUT, DELETE, HEAD, INVALID};
     HttpRequest()
         : method_(Method::INVALID)
         , version_("Unknown")
     {}
-
-    ~HttpRequest();
 
     bool setMethod(const char* start, const char* end);
 
@@ -46,6 +34,8 @@ public:
     void setPath(const char* start, const char* end);
 
     void setQueryParameters(const char* start, const char* end);
+
+    void setPathParameters(const std::string &key, const std::string &value);
 
     void setVersion(std::string version);
 
@@ -70,5 +60,16 @@ public:
     uint64_t contentLength() const { return contentLength_; }
         
     void swap(HttpRequest& that);
+
+private:
+    Method                                       method_; // 请求方法
+    std::string                                  version_; // http版本
+    std::string                                  path_; // 请求路径
+    std::unordered_map<std::string, std::string> pathParameters_; // 路径参数
+    std::unordered_map<std::string, std::string> queryParameters_; // 查询参数
+    TimeStamp                                    receiveTime_; // 接收时间
+    std::map<std::string, std::string>           headers_; // 请求头
+    std::string                                  content_; // 请求体
+    uint64_t                                     contentLength_ { 0 }; // 请求体长度
 };
 

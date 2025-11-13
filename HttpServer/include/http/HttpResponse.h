@@ -6,31 +6,20 @@
 #include <map>
 #include <cstdint>
 
-enum class HttpStatusCode{
-    kUnknown,
-    k200Ok = 200,
-    k204NoContent = 204,
-    k301MovedPermanently = 301,
-    k400BadRequest = 400,
-    k401Unauthorized = 401,
-    k403Forbidden = 403,
-    k404NotFound = 404,
-    k409Conflict = 409,
-    k500InternalServerError = 500,
-};
-
 class HttpResponse {
-private:
-    std::string                        httpVersion_; 
-    HttpStatusCode                     statusCode_;
-    std::string                        statusMessage_;
-    bool                               closeConnection_;
-    std::map<std::string, std::string> headers_;
-    std::string                        body_;
-    bool                               isFile_;
-
 public:
-    
+    enum class HttpStatusCode{
+        kUnknown,
+        k200Ok = 200,
+        k204NoContent = 204,
+        k301MovedPermanently = 301,
+        k400BadRequest = 400,
+        k401Unauthorized = 401,
+        k403Forbidden = 403,
+        k404NotFound = 404,
+        k409Conflict = 409,
+        k500InternalServerError = 500,
+    };
     HttpResponse(bool close = true)
         : statusCode_(HttpStatusCode::kUnknown)
         , closeConnection_(close)
@@ -66,4 +55,13 @@ public:
     void setErrorHeader(){}
 
     void appendToBuffer(Buffer* outputBuf) const;
+
+private:
+    std::string                        httpVersion_; 
+    HttpStatusCode                     statusCode_;
+    std::string                        statusMessage_;
+    bool                               closeConnection_;
+    std::map<std::string, std::string> headers_;
+    std::string                        body_;
+    bool                               isFile_;
 };
