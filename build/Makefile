@@ -249,6 +249,78 @@ HttpServer/src/router/Router.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.s
 .PHONY : HttpServer/src/router/Router.cc.s
 
+HttpServer/src/session/Session.o: HttpServer/src/session/Session.cc.o
+.PHONY : HttpServer/src/session/Session.o
+
+# target to build an object file
+HttpServer/src/session/Session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o
+.PHONY : HttpServer/src/session/Session.cc.o
+
+HttpServer/src/session/Session.i: HttpServer/src/session/Session.cc.i
+.PHONY : HttpServer/src/session/Session.i
+
+# target to preprocess a source file
+HttpServer/src/session/Session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.i
+.PHONY : HttpServer/src/session/Session.cc.i
+
+HttpServer/src/session/Session.s: HttpServer/src/session/Session.cc.s
+.PHONY : HttpServer/src/session/Session.s
+
+# target to generate assembly for a file
+HttpServer/src/session/Session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.s
+.PHONY : HttpServer/src/session/Session.cc.s
+
+HttpServer/src/session/SessionManager.o: HttpServer/src/session/SessionManager.cc.o
+.PHONY : HttpServer/src/session/SessionManager.o
+
+# target to build an object file
+HttpServer/src/session/SessionManager.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o
+.PHONY : HttpServer/src/session/SessionManager.cc.o
+
+HttpServer/src/session/SessionManager.i: HttpServer/src/session/SessionManager.cc.i
+.PHONY : HttpServer/src/session/SessionManager.i
+
+# target to preprocess a source file
+HttpServer/src/session/SessionManager.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.i
+.PHONY : HttpServer/src/session/SessionManager.cc.i
+
+HttpServer/src/session/SessionManager.s: HttpServer/src/session/SessionManager.cc.s
+.PHONY : HttpServer/src/session/SessionManager.s
+
+# target to generate assembly for a file
+HttpServer/src/session/SessionManager.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.s
+.PHONY : HttpServer/src/session/SessionManager.cc.s
+
+HttpServer/src/session/SessionStorage.o: HttpServer/src/session/SessionStorage.cc.o
+.PHONY : HttpServer/src/session/SessionStorage.o
+
+# target to build an object file
+HttpServer/src/session/SessionStorage.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o
+.PHONY : HttpServer/src/session/SessionStorage.cc.o
+
+HttpServer/src/session/SessionStorage.i: HttpServer/src/session/SessionStorage.cc.i
+.PHONY : HttpServer/src/session/SessionStorage.i
+
+# target to preprocess a source file
+HttpServer/src/session/SessionStorage.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.i
+.PHONY : HttpServer/src/session/SessionStorage.cc.i
+
+HttpServer/src/session/SessionStorage.s: HttpServer/src/session/SessionStorage.cc.s
+.PHONY : HttpServer/src/session/SessionStorage.s
+
+# target to generate assembly for a file
+HttpServer/src/session/SessionStorage.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s
+.PHONY : HttpServer/src/session/SessionStorage.cc.s
+
 WebApps/yiyiCatServer/src/main.o: WebApps/yiyiCatServer/src/main.cpp.o
 .PHONY : WebApps/yiyiCatServer/src/main.o
 
@@ -705,6 +777,15 @@ help:
 	@echo "... HttpServer/src/router/Router.o"
 	@echo "... HttpServer/src/router/Router.i"
 	@echo "... HttpServer/src/router/Router.s"
+	@echo "... HttpServer/src/session/Session.o"
+	@echo "... HttpServer/src/session/Session.i"
+	@echo "... HttpServer/src/session/Session.s"
+	@echo "... HttpServer/src/session/SessionManager.o"
+	@echo "... HttpServer/src/session/SessionManager.i"
+	@echo "... HttpServer/src/session/SessionManager.s"
+	@echo "... HttpServer/src/session/SessionStorage.o"
+	@echo "... HttpServer/src/session/SessionStorage.i"
+	@echo "... HttpServer/src/session/SessionStorage.s"
 	@echo "... WebApps/yiyiCatServer/src/main.o"
 	@echo "... WebApps/yiyiCatServer/src/main.i"
 	@echo "... WebApps/yiyiCatServer/src/main.s"

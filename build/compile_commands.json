@@ -136,5 +136,23 @@
   "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/HttpServer/include/router -I/mnt/c/Users/lixia/webserver/HttpServer/include/session -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/router/Router.cc",
   "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/router/Router.cc",
   "output": "CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o"
+},
+{
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/HttpServer/include/router -I/mnt/c/Users/lixia/webserver/HttpServer/include/session -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc",
+  "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc",
+  "output": "CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o"
+},
+{
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/HttpServer/include/router -I/mnt/c/Users/lixia/webserver/HttpServer/include/session -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc",
+  "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc",
+  "output": "CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o"
+},
+{
+  "directory": "/mnt/c/Users/lixia/webserver/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/HttpServer/include/router -I/mnt/c/Users/lixia/webserver/HttpServer/include/session -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc",
+  "file": "/mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc",
+  "output": "CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o"
 }
 ]

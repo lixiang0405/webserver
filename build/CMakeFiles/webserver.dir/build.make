@@ -391,6 +391,48 @@ CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/router/Router.cc -o CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.s
 
+CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc
+CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc > CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc -o CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc > CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc > CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s
+
 # Object files for target webserver
 webserver_OBJECTS = \
 "CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/main.cpp.o" \
@@ -415,7 +457,10 @@ webserver_OBJECTS = \
 "CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o" \
 "CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.o" \
 "CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.o" \
-"CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o"
+"CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o"
 
 # External object files for target webserver
 webserver_EXTERNAL_OBJECTS =
@@ -443,9 +488,12 @@ webserver: CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o
 webserver: CMakeFiles/webserver.dir/build.make
 webserver: CMakeFiles/webserver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable webserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable webserver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/webserver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
