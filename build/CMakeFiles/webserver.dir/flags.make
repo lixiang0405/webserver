@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/HttpServer/include/router -I/mnt/c/Users/lixia/webserver/HttpServer/include/session -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql
+CXX_INCLUDES = -I/mnt/c/Users/lixia/webserver -I/mnt/c/Users/lixia/webserver/include -I/mnt/c/Users/lixia/webserver/HttpServer/include/http -I/mnt/c/Users/lixia/webserver/HttpServer/include/router -I/mnt/c/Users/lixia/webserver/HttpServer/include/session -I/mnt/c/Users/lixia/webserver/HttpServer/include/middleware -I/mnt/c/Users/lixia/webserver/HttpServer/include/middleware/cors -I/mnt/c/Users/lixia/webserver/HttpServer/include/utils -I/mnt/c/Users/lixia/webserver/HttpServer/include/utils/db -I/mnt/c/Users/lixia/webserver/HttpServer/include/ssl -I/mnt/c/Users/lixia/webserver/mymuduo/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include -I/mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/include/handlers -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql
 
 CXX_FLAGS = -g -std=gnu++17
 

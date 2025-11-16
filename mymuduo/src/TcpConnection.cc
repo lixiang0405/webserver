@@ -47,6 +47,7 @@ void TcpConnection::send(const std::string &buff){
     }
 }
 
+
 void TcpConnection::sendInLoop(const void *data, size_t len){
     ssize_t nworte = 0;
     size_t  remaining = len;

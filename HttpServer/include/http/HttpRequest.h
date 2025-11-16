@@ -11,9 +11,9 @@
 
 class HttpRequest{
 public:
-    enum class Method{ GET = 0, POST, PUT, DELETE, HEAD, INVALID};
+    enum class Method{ kInvalid, kGet, kPost, kHead, kPut, kDelete, kOptions };
     HttpRequest()
-        : method_(Method::INVALID)
+        : method_(Method::kInvalid)
         , version_("Unknown")
     {}
 
@@ -54,6 +54,8 @@ public:
     std::string getVersion() const{ return version_; }
     
     std::string getHeader(const std::string &field) const;
+
+    std::string getBody() const{ return content_; }
 
     const std::map<std::string, std::string>& headers() const { return headers_; }
 

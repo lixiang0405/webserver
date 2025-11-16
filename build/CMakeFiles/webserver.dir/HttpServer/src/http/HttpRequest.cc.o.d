@@ -168,4 +168,6 @@ CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /mnt/c/Users/lixia/webserver/mymuduo/include/Logger.h \
+ /mnt/c/Users/lixia/webserver/mymuduo/include/noncopyable.h \
  /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc

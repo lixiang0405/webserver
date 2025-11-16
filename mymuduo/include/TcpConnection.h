@@ -3,6 +3,7 @@
 #include<memory>
 #include<atomic>
 #include<string>
+#include<any>
 
 #include "noncopyable.h"
 #include "TimeStamp.h"
@@ -55,6 +56,8 @@ private:
     Buffer inputBuffer_;
     Buffer outputBuffer_;
 
+    std::any context_;
+
 public:
     TcpConnection(EventLoop *loop, const std::string &name, int sockfd, const InetAddress &localAddr, const InetAddress &peerAddr);
     ~TcpConnection();
@@ -79,4 +82,8 @@ public:
 
     void connectEstablished();
     void connectDestroyed();
+
+    void setContext(const std::any& context) { context_ = context; }
+
+    std::any* getMutableContext() { return &context_; }
 };

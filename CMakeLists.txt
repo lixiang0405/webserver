@@ -6,7 +6,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 在文件开头添加 OpenSSL 查找
-find_package(OpenSSL REQUIRED)
+find_package(
+    OpenSSL REQUIRED
+)
 
 # 添加头文件路径
 include_directories(
@@ -15,8 +17,14 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/HttpServer/include/http
     ${PROJECT_SOURCE_DIR}/HttpServer/include/router
     ${PROJECT_SOURCE_DIR}/HttpServer/include/session
+    ${PROJECT_SOURCE_DIR}/HttpServer/include/middleware
+    ${PROJECT_SOURCE_DIR}/HttpServer/include/middleware/cors
+    ${PROJECT_SOURCE_DIR}/HttpServer/include/utils
+    ${PROJECT_SOURCE_DIR}/HttpServer/include/utils/db
+    ${PROJECT_SOURCE_DIR}/HttpServer/include/ssl
     ${PROJECT_SOURCE_DIR}/mymuduo/include
     ${PROJECT_SOURCE_DIR}/WebApps/yiyiCatServer/include
+    ${PROJECT_SOURCE_DIR}/WebApps/yiyiCatServer/include/handlers
     /usr/include/mysql-cppconn-8
     /usr/include/mysql
     ${OPENSSL_INCLUDE_DIR}

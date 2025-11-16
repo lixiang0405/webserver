@@ -4,9 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                // "${workspaceFolder}/HttpServer/include",
-                // "${workspaceFolder}/mymuduo/include",
-                // "${workspaceFolder}/WebApps/yiyiCatServer/include"
+                "${workspaceFolder}/HttpServer/include/utils/db"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

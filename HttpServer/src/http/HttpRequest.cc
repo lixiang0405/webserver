@@ -1,21 +1,25 @@
 #include "HttpRequest.h"
+#include "Logger.h"
 #include <string>
 #include <sstream>
 
 bool HttpRequest::setMethod(const char* start, const char* end){
     std::string method(start, end);
     if (method == "GET") {
-        method_ = Method::GET;
+        method_ = Method::kGet;
     } else if (method == "POST") {
-        method_ = Method::POST;
+        method_ = Method::kPost;
     } else if (method == "PUT") {
-        method_ = Method::PUT;
+        method_ = Method::kPut;
     } else if (method == "DELETE") {
-        method_ = Method::DELETE;
+        method_ = Method::kDelete;
     } else if (method == "HEAD") {
-        method_ = Method::HEAD;
-    } else {
-        method_ = Method::INVALID;
+        method_ = Method::kHead;
+    }else if (method == "OPTIONS") {
+        method_ = Method::kOptions;
+    } 
+    else {
+        method_ = Method::kInvalid;
         return false;  // 无效方法
     }   
     return true;
@@ -59,7 +63,8 @@ void HttpRequest::setPathParameters(const std::string &key, const std::string &v
 
 void HttpRequest::addHeader(const char* start, const char* colon, const char* end){
     std::string key = std::string(start, colon);
-    std::string value = std::string(colon + 1, end);
+    std::string value = std::string(colon + 2, end);
+    LOG_DEBUG("addHeader key:%s value:%s\n", key.c_str(), value.c_str());
     headers_[key] = value;
 }
 
@@ -90,7 +95,7 @@ std::string HttpRequest::getPathParameters(const std::string &key) const{
 }
 
 std::string HttpRequest::getQueryParameters(const std::string &key) const{
-        std::string result;
+    std::string result;
     auto it = queryParameters_.find(key);
     if(it != queryParameters_.end()){
         result = it->second;

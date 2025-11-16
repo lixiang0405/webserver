@@ -1,4 +1,5 @@
 #include "SessionStorage.h"
+#include "Logger.h"
 #include <iostream>
 
 void MemorySessionStorage::save(std::shared_ptr<Session> session)
@@ -10,6 +11,7 @@ void MemorySessionStorage::save(std::shared_ptr<Session> session)
 // 通过会话ID从存储中加载会话
 std::shared_ptr<Session> MemorySessionStorage::load(const std::string& sessionId)
 {
+    LOG_INFO("MemorySessionStorage::load %s\n", sessionId.c_str());
     auto it = sessions_.find(sessionId);
     if (it != sessions_.end())
     {

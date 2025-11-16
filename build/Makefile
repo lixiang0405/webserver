@@ -225,6 +225,54 @@ HttpServer/src/http/HttpServer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.s
 .PHONY : HttpServer/src/http/HttpServer.cc.s
 
+HttpServer/src/middleware/MiddlewareChain.o: HttpServer/src/middleware/MiddlewareChain.cc.o
+.PHONY : HttpServer/src/middleware/MiddlewareChain.o
+
+# target to build an object file
+HttpServer/src/middleware/MiddlewareChain.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o
+.PHONY : HttpServer/src/middleware/MiddlewareChain.cc.o
+
+HttpServer/src/middleware/MiddlewareChain.i: HttpServer/src/middleware/MiddlewareChain.cc.i
+.PHONY : HttpServer/src/middleware/MiddlewareChain.i
+
+# target to preprocess a source file
+HttpServer/src/middleware/MiddlewareChain.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.i
+.PHONY : HttpServer/src/middleware/MiddlewareChain.cc.i
+
+HttpServer/src/middleware/MiddlewareChain.s: HttpServer/src/middleware/MiddlewareChain.cc.s
+.PHONY : HttpServer/src/middleware/MiddlewareChain.s
+
+# target to generate assembly for a file
+HttpServer/src/middleware/MiddlewareChain.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.s
+.PHONY : HttpServer/src/middleware/MiddlewareChain.cc.s
+
+HttpServer/src/middleware/cors/CorsMiddleware.o: HttpServer/src/middleware/cors/CorsMiddleware.cc.o
+.PHONY : HttpServer/src/middleware/cors/CorsMiddleware.o
+
+# target to build an object file
+HttpServer/src/middleware/cors/CorsMiddleware.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o
+.PHONY : HttpServer/src/middleware/cors/CorsMiddleware.cc.o
+
+HttpServer/src/middleware/cors/CorsMiddleware.i: HttpServer/src/middleware/cors/CorsMiddleware.cc.i
+.PHONY : HttpServer/src/middleware/cors/CorsMiddleware.i
+
+# target to preprocess a source file
+HttpServer/src/middleware/cors/CorsMiddleware.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.i
+.PHONY : HttpServer/src/middleware/cors/CorsMiddleware.cc.i
+
+HttpServer/src/middleware/cors/CorsMiddleware.s: HttpServer/src/middleware/cors/CorsMiddleware.cc.s
+.PHONY : HttpServer/src/middleware/cors/CorsMiddleware.s
+
+# target to generate assembly for a file
+HttpServer/src/middleware/cors/CorsMiddleware.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.s
+.PHONY : HttpServer/src/middleware/cors/CorsMiddleware.cc.s
+
 HttpServer/src/router/Router.o: HttpServer/src/router/Router.cc.o
 .PHONY : HttpServer/src/router/Router.o
 
@@ -320,6 +368,366 @@ HttpServer/src/session/SessionStorage.s: HttpServer/src/session/SessionStorage.c
 HttpServer/src/session/SessionStorage.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s
 .PHONY : HttpServer/src/session/SessionStorage.cc.s
+
+HttpServer/src/ssl/SslConfig.o: HttpServer/src/ssl/SslConfig.cc.o
+.PHONY : HttpServer/src/ssl/SslConfig.o
+
+# target to build an object file
+HttpServer/src/ssl/SslConfig.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o
+.PHONY : HttpServer/src/ssl/SslConfig.cc.o
+
+HttpServer/src/ssl/SslConfig.i: HttpServer/src/ssl/SslConfig.cc.i
+.PHONY : HttpServer/src/ssl/SslConfig.i
+
+# target to preprocess a source file
+HttpServer/src/ssl/SslConfig.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.i
+.PHONY : HttpServer/src/ssl/SslConfig.cc.i
+
+HttpServer/src/ssl/SslConfig.s: HttpServer/src/ssl/SslConfig.cc.s
+.PHONY : HttpServer/src/ssl/SslConfig.s
+
+# target to generate assembly for a file
+HttpServer/src/ssl/SslConfig.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.s
+.PHONY : HttpServer/src/ssl/SslConfig.cc.s
+
+HttpServer/src/ssl/SslConnection.o: HttpServer/src/ssl/SslConnection.cc.o
+.PHONY : HttpServer/src/ssl/SslConnection.o
+
+# target to build an object file
+HttpServer/src/ssl/SslConnection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o
+.PHONY : HttpServer/src/ssl/SslConnection.cc.o
+
+HttpServer/src/ssl/SslConnection.i: HttpServer/src/ssl/SslConnection.cc.i
+.PHONY : HttpServer/src/ssl/SslConnection.i
+
+# target to preprocess a source file
+HttpServer/src/ssl/SslConnection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.i
+.PHONY : HttpServer/src/ssl/SslConnection.cc.i
+
+HttpServer/src/ssl/SslConnection.s: HttpServer/src/ssl/SslConnection.cc.s
+.PHONY : HttpServer/src/ssl/SslConnection.s
+
+# target to generate assembly for a file
+HttpServer/src/ssl/SslConnection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.s
+.PHONY : HttpServer/src/ssl/SslConnection.cc.s
+
+HttpServer/src/ssl/SslContext.o: HttpServer/src/ssl/SslContext.cc.o
+.PHONY : HttpServer/src/ssl/SslContext.o
+
+# target to build an object file
+HttpServer/src/ssl/SslContext.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o
+.PHONY : HttpServer/src/ssl/SslContext.cc.o
+
+HttpServer/src/ssl/SslContext.i: HttpServer/src/ssl/SslContext.cc.i
+.PHONY : HttpServer/src/ssl/SslContext.i
+
+# target to preprocess a source file
+HttpServer/src/ssl/SslContext.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.i
+.PHONY : HttpServer/src/ssl/SslContext.cc.i
+
+HttpServer/src/ssl/SslContext.s: HttpServer/src/ssl/SslContext.cc.s
+.PHONY : HttpServer/src/ssl/SslContext.s
+
+# target to generate assembly for a file
+HttpServer/src/ssl/SslContext.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.s
+.PHONY : HttpServer/src/ssl/SslContext.cc.s
+
+HttpServer/src/utils/db/DbConnection.o: HttpServer/src/utils/db/DbConnection.cc.o
+.PHONY : HttpServer/src/utils/db/DbConnection.o
+
+# target to build an object file
+HttpServer/src/utils/db/DbConnection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o
+.PHONY : HttpServer/src/utils/db/DbConnection.cc.o
+
+HttpServer/src/utils/db/DbConnection.i: HttpServer/src/utils/db/DbConnection.cc.i
+.PHONY : HttpServer/src/utils/db/DbConnection.i
+
+# target to preprocess a source file
+HttpServer/src/utils/db/DbConnection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.i
+.PHONY : HttpServer/src/utils/db/DbConnection.cc.i
+
+HttpServer/src/utils/db/DbConnection.s: HttpServer/src/utils/db/DbConnection.cc.s
+.PHONY : HttpServer/src/utils/db/DbConnection.s
+
+# target to generate assembly for a file
+HttpServer/src/utils/db/DbConnection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.s
+.PHONY : HttpServer/src/utils/db/DbConnection.cc.s
+
+HttpServer/src/utils/db/DbConnectionPool.o: HttpServer/src/utils/db/DbConnectionPool.cc.o
+.PHONY : HttpServer/src/utils/db/DbConnectionPool.o
+
+# target to build an object file
+HttpServer/src/utils/db/DbConnectionPool.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o
+.PHONY : HttpServer/src/utils/db/DbConnectionPool.cc.o
+
+HttpServer/src/utils/db/DbConnectionPool.i: HttpServer/src/utils/db/DbConnectionPool.cc.i
+.PHONY : HttpServer/src/utils/db/DbConnectionPool.i
+
+# target to preprocess a source file
+HttpServer/src/utils/db/DbConnectionPool.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.i
+.PHONY : HttpServer/src/utils/db/DbConnectionPool.cc.i
+
+HttpServer/src/utils/db/DbConnectionPool.s: HttpServer/src/utils/db/DbConnectionPool.cc.s
+.PHONY : HttpServer/src/utils/db/DbConnectionPool.s
+
+# target to generate assembly for a file
+HttpServer/src/utils/db/DbConnectionPool.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.s
+.PHONY : HttpServer/src/utils/db/DbConnectionPool.cc.s
+
+WebApps/yiyiCatServer/src/AiGame.o: WebApps/yiyiCatServer/src/AiGame.cc.o
+.PHONY : WebApps/yiyiCatServer/src/AiGame.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/AiGame.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o
+.PHONY : WebApps/yiyiCatServer/src/AiGame.cc.o
+
+WebApps/yiyiCatServer/src/AiGame.i: WebApps/yiyiCatServer/src/AiGame.cc.i
+.PHONY : WebApps/yiyiCatServer/src/AiGame.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/AiGame.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.i
+.PHONY : WebApps/yiyiCatServer/src/AiGame.cc.i
+
+WebApps/yiyiCatServer/src/AiGame.s: WebApps/yiyiCatServer/src/AiGame.cc.s
+.PHONY : WebApps/yiyiCatServer/src/AiGame.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/AiGame.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.s
+.PHONY : WebApps/yiyiCatServer/src/AiGame.cc.s
+
+WebApps/yiyiCatServer/src/YiyiCatServer.o: WebApps/yiyiCatServer/src/YiyiCatServer.cc.o
+.PHONY : WebApps/yiyiCatServer/src/YiyiCatServer.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/YiyiCatServer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o
+.PHONY : WebApps/yiyiCatServer/src/YiyiCatServer.cc.o
+
+WebApps/yiyiCatServer/src/YiyiCatServer.i: WebApps/yiyiCatServer/src/YiyiCatServer.cc.i
+.PHONY : WebApps/yiyiCatServer/src/YiyiCatServer.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/YiyiCatServer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.i
+.PHONY : WebApps/yiyiCatServer/src/YiyiCatServer.cc.i
+
+WebApps/yiyiCatServer/src/YiyiCatServer.s: WebApps/yiyiCatServer/src/YiyiCatServer.cc.s
+.PHONY : WebApps/yiyiCatServer/src/YiyiCatServer.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/YiyiCatServer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.s
+.PHONY : WebApps/yiyiCatServer/src/YiyiCatServer.cc.s
+
+WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.o: WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o
+
+WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.i: WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.i
+
+WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.s: WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.s
+
+WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.o: WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o
+
+WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.i: WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.i
+
+WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.s: WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.s
+
+WebApps/yiyiCatServer/src/handlers/EntryHandler.o: WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/EntryHandler.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o
+
+WebApps/yiyiCatServer/src/handlers/EntryHandler.i: WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/EntryHandler.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.i
+
+WebApps/yiyiCatServer/src/handlers/EntryHandler.s: WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/EntryHandler.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.s
+
+WebApps/yiyiCatServer/src/handlers/GameBackendHandler.o: WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/GameBackendHandler.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o
+
+WebApps/yiyiCatServer/src/handlers/GameBackendHandler.i: WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/GameBackendHandler.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.i
+
+WebApps/yiyiCatServer/src/handlers/GameBackendHandler.s: WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/GameBackendHandler.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.s
+
+WebApps/yiyiCatServer/src/handlers/LoginHandler.o: WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/LoginHandler.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o
+
+WebApps/yiyiCatServer/src/handlers/LoginHandler.i: WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/LoginHandler.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.i
+
+WebApps/yiyiCatServer/src/handlers/LoginHandler.s: WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/LoginHandler.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.s
+
+WebApps/yiyiCatServer/src/handlers/Loginout.o: WebApps/yiyiCatServer/src/handlers/Loginout.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/Loginout.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/Loginout.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/Loginout.cc.o
+
+WebApps/yiyiCatServer/src/handlers/Loginout.i: WebApps/yiyiCatServer/src/handlers/Loginout.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/Loginout.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/Loginout.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/Loginout.cc.i
+
+WebApps/yiyiCatServer/src/handlers/Loginout.s: WebApps/yiyiCatServer/src/handlers/Loginout.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/Loginout.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/Loginout.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/Loginout.cc.s
+
+WebApps/yiyiCatServer/src/handlers/MenuHandler.o: WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/MenuHandler.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o
+
+WebApps/yiyiCatServer/src/handlers/MenuHandler.i: WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/MenuHandler.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.i
+
+WebApps/yiyiCatServer/src/handlers/MenuHandler.s: WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/MenuHandler.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.s
+
+WebApps/yiyiCatServer/src/handlers/RegisterHandler.o: WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/RegisterHandler.o
+
+# target to build an object file
+WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o
+.PHONY : WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o
+
+WebApps/yiyiCatServer/src/handlers/RegisterHandler.i: WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/RegisterHandler.i
+
+# target to preprocess a source file
+WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.i
+.PHONY : WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.i
+
+WebApps/yiyiCatServer/src/handlers/RegisterHandler.s: WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/RegisterHandler.s
+
+# target to generate assembly for a file
+WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.s
+.PHONY : WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.s
 
 WebApps/yiyiCatServer/src/main.o: WebApps/yiyiCatServer/src/main.cpp.o
 .PHONY : WebApps/yiyiCatServer/src/main.o
@@ -774,6 +1182,12 @@ help:
 	@echo "... HttpServer/src/http/HttpServer.o"
 	@echo "... HttpServer/src/http/HttpServer.i"
 	@echo "... HttpServer/src/http/HttpServer.s"
+	@echo "... HttpServer/src/middleware/MiddlewareChain.o"
+	@echo "... HttpServer/src/middleware/MiddlewareChain.i"
+	@echo "... HttpServer/src/middleware/MiddlewareChain.s"
+	@echo "... HttpServer/src/middleware/cors/CorsMiddleware.o"
+	@echo "... HttpServer/src/middleware/cors/CorsMiddleware.i"
+	@echo "... HttpServer/src/middleware/cors/CorsMiddleware.s"
 	@echo "... HttpServer/src/router/Router.o"
 	@echo "... HttpServer/src/router/Router.i"
 	@echo "... HttpServer/src/router/Router.s"
@@ -786,6 +1200,51 @@ help:
 	@echo "... HttpServer/src/session/SessionStorage.o"
 	@echo "... HttpServer/src/session/SessionStorage.i"
 	@echo "... HttpServer/src/session/SessionStorage.s"
+	@echo "... HttpServer/src/ssl/SslConfig.o"
+	@echo "... HttpServer/src/ssl/SslConfig.i"
+	@echo "... HttpServer/src/ssl/SslConfig.s"
+	@echo "... HttpServer/src/ssl/SslConnection.o"
+	@echo "... HttpServer/src/ssl/SslConnection.i"
+	@echo "... HttpServer/src/ssl/SslConnection.s"
+	@echo "... HttpServer/src/ssl/SslContext.o"
+	@echo "... HttpServer/src/ssl/SslContext.i"
+	@echo "... HttpServer/src/ssl/SslContext.s"
+	@echo "... HttpServer/src/utils/db/DbConnection.o"
+	@echo "... HttpServer/src/utils/db/DbConnection.i"
+	@echo "... HttpServer/src/utils/db/DbConnection.s"
+	@echo "... HttpServer/src/utils/db/DbConnectionPool.o"
+	@echo "... HttpServer/src/utils/db/DbConnectionPool.i"
+	@echo "... HttpServer/src/utils/db/DbConnectionPool.s"
+	@echo "... WebApps/yiyiCatServer/src/AiGame.o"
+	@echo "... WebApps/yiyiCatServer/src/AiGame.i"
+	@echo "... WebApps/yiyiCatServer/src/AiGame.s"
+	@echo "... WebApps/yiyiCatServer/src/YiyiCatServer.o"
+	@echo "... WebApps/yiyiCatServer/src/YiyiCatServer.i"
+	@echo "... WebApps/yiyiCatServer/src/YiyiCatServer.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/EntryHandler.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/EntryHandler.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/EntryHandler.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/GameBackendHandler.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/GameBackendHandler.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/GameBackendHandler.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/LoginHandler.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/LoginHandler.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/LoginHandler.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/Loginout.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/Loginout.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/Loginout.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/MenuHandler.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/MenuHandler.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/MenuHandler.s"
+	@echo "... WebApps/yiyiCatServer/src/handlers/RegisterHandler.o"
+	@echo "... WebApps/yiyiCatServer/src/handlers/RegisterHandler.i"
+	@echo "... WebApps/yiyiCatServer/src/handlers/RegisterHandler.s"
 	@echo "... WebApps/yiyiCatServer/src/main.o"
 	@echo "... WebApps/yiyiCatServer/src/main.i"
 	@echo "... WebApps/yiyiCatServer/src/main.s"

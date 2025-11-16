@@ -377,10 +377,38 @@ CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/http/HttpServer.cc -o CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.s
 
+CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/MiddlewareChain.cc
+CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/MiddlewareChain.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/MiddlewareChain.cc > CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/MiddlewareChain.cc -o CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/cors/CorsMiddleware.cc
+CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/cors/CorsMiddleware.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/cors/CorsMiddleware.cc > CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/middleware/cors/CorsMiddleware.cc -o CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.s
+
 CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o: CMakeFiles/webserver.dir/flags.make
 CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/router/Router.cc
 CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/router/Router.cc
 
 CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.i: cmake_force
@@ -394,7 +422,7 @@ CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.s: cmake_force
 CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o: CMakeFiles/webserver.dir/flags.make
 CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc
 CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/Session.cc
 
 CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.i: cmake_force
@@ -408,7 +436,7 @@ CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.s: cmake_force
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o: CMakeFiles/webserver.dir/flags.make
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionManager.cc
 
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.i: cmake_force
@@ -422,7 +450,7 @@ CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.s: cmake_force
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o: CMakeFiles/webserver.dir/flags.make
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc
 
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.i: cmake_force
@@ -432,6 +460,216 @@ CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.i: cmake_force
 CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/session/SessionStorage.cc -o CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConfig.cc
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConfig.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConfig.cc > CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConfig.cc -o CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConnection.cc
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConnection.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConnection.cc > CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslConnection.cc -o CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslContext.cc
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslContext.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslContext.cc > CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/ssl/SslContext.cc -o CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnection.cc
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnection.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnection.cc > CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnection.cc -o CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.s
+
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o: /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnectionPool.cc
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o -MF CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o.d -o CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o -c /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnectionPool.cc
+
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnectionPool.cc > CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.i
+
+CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/HttpServer/src/utils/db/DbConnectionPool.cc -o CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/AiGame.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/AiGame.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/AiGame.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/AiGame.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/YiyiCatServer.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/YiyiCatServer.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/YiyiCatServer.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/YiyiCatServer.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/Loginout.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/Loginout.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/Loginout.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/Loginout.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.s
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o: CMakeFiles/webserver.dir/flags.make
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o: /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o: CMakeFiles/webserver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o -MF CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o.d -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o -c /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc > CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.i
+
+CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixia/webserver/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc -o CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.s
 
 # Object files for target webserver
 webserver_OBJECTS = \
@@ -457,10 +695,27 @@ webserver_OBJECTS = \
 "CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o" \
 "CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.o" \
 "CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o" \
 "CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o" \
 "CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o" \
 "CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o" \
-"CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o"
+"CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o" \
+"CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o" \
+"CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o"
 
 # External object files for target webserver
 webserver_EXTERNAL_OBJECTS =
@@ -487,13 +742,30 @@ webserver: CMakeFiles/webserver.dir/HttpServer/src/http/HttpContext.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/http/HttpRequest.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/http/HttpResponse.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/http/HttpServer.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/middleware/MiddlewareChain.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/middleware/cors/CorsMiddleware.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/router/Router.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/session/Session.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o
 webserver: CMakeFiles/webserver.dir/HttpServer/src/session/SessionStorage.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConfig.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/ssl/SslConnection.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/ssl/SslContext.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnection.cc.o
+webserver: CMakeFiles/webserver.dir/HttpServer/src/utils/db/DbConnectionPool.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/AiGame.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/YiyiCatServer.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameMoveHandler.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/AiGameStartHandler.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/EntryHandler.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/GameBackendHandler.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/LoginHandler.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/Loginout.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/MenuHandler.cc.o
+webserver: CMakeFiles/webserver.dir/WebApps/yiyiCatServer/src/handlers/RegisterHandler.cc.o
 webserver: CMakeFiles/webserver.dir/build.make
 webserver: CMakeFiles/webserver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable webserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/lixia/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable webserver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/webserver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

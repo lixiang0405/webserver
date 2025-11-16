@@ -21,11 +21,29 @@
 
 class TcpServer
 {
+public:
     using ThreadInitCallback = std::function<void(EventLoop *)>;
     enum Option{
         kNoReusePort,
         kReusePort,
     };
+
+    TcpServer(EventLoop *loop, const InetAddress &listenAddr, const std::string &name, Option option = kNoReusePort);
+    ~TcpServer();
+
+    void setThreadInitCallback(const ThreadInitCallback &cb){ threadInitCallback_ = cb; }
+    void setConnectionCallback(const ConnectionCallback &cb){ connectionCallback_ = cb; }
+    void setMessageCallback(const MessageCallback &cb){ messageCallback_ = cb; }
+    void setWriteCompleteCallback(const WriteCompleteCallback &cb){ writeCompleteCallback_ = cb; }
+
+    void setThreadNum(int numThreads);
+
+    void start();
+
+    EventLoop* getLoop() const { return loop_; }
+    std::string ipPort() const { return ipPort_; }
+    std::string name() const { return name_; }
+
 private:
     void newConnection(int sockfd, const InetAddress &peerAddr);
     void removeConnection(const TcpConnectionPtr &conn);
@@ -50,16 +68,4 @@ private:
     int numThreads_;
     std::atomic_int started_;
     int nextConnId_;
-public:
-    TcpServer(EventLoop *loop, const InetAddress &listenAddr, const std::string &name, Option option = kNoReusePort);
-    ~TcpServer();
-
-    void setThreadInitCallback(const ThreadInitCallback &cb){ threadInitCallback_ = cb; }
-    void setConnectionCallback(const ConnectionCallback &cb){ connectionCallback_ = cb; }
-    void setMessageCallback(const MessageCallback &cb){ messageCallback_ = cb; }
-    void setWriteCompleteCallback(const WriteCompleteCallback &cb){ writeCompleteCallback_ = cb; }
-
-    void setThreadNum(int numThreads);
-
-    void start();
 };
