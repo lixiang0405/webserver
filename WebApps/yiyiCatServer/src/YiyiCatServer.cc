@@ -13,9 +13,10 @@
 
 //有问题
 YiyiCatServer::YiyiCatServer(int port,
-                           const std::string &name,
-                           TcpServer::Option option)
-    : httpServer_(port, name, option), maxOnline_(0)
+                            const std::string &name,
+                            bool useSSL,
+                            TcpServer::Option option)
+    : httpServer_(port, name, useSSL, option), maxOnline_(0)
 {
     initialize();
 }

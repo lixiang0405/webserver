@@ -32,8 +32,9 @@ class YiyiCatServer
 {
 public:
     YiyiCatServer(int port,
-                 const std::string& name,
-                 TcpServer::Option option = TcpServer::kNoReusePort);
+                  const std::string& name,
+                  bool useSSL = false,
+                  TcpServer::Option option = TcpServer::kNoReusePort);
 
     void setThreadNum(int numThreads);
     void start();
