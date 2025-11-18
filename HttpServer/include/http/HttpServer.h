@@ -43,7 +43,7 @@ public:
         server_.setThreadNum(numThreads);
     }
 
-    void start();
+    void start(const std::string& certificateFile = "../WebApps/yiyiCatServer/resource/server.crt", const std::string& privateKeyFile = "../WebApps/yiyiCatServer/resource/server.key");
 
     EventLoop* getLoop() const 
     { 

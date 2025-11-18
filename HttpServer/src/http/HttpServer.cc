@@ -27,9 +27,15 @@ HttpServer::HttpServer(int port,
 }
 
 // 服务器运行函数
-void HttpServer::start()
+void HttpServer::start(const std::string& certificateFile, const std::string& privateKeyFile)
 {
     LOG_INFO("HttpServer[%s] starts listening on %s\n", server_.name().c_str(), server_.ipPort().c_str());
+    if(useSSL_){
+        SslConfig sslConfig;
+        sslConfig.setCertificateFile(certificateFile);
+        sslConfig.setPrivateKeyFile(privateKeyFile);
+        setSslConfig(sslConfig);
+    }
     server_.start();
     mainLoop_.loop();
 }
