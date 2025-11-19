@@ -52,7 +52,7 @@ void TcpConnection::sendInLoop(const void *data, size_t len){
     ssize_t nworte = 0;
     size_t  remaining = len;
     bool faultError = false;
-    LOG_INFO("TcpConnection::sendInLoop\n");
+    LOG_DEBUG("TcpConnection::sendInLoop\n");
     if(state_ == kDisconnected){
         LOG_ERROR("disconnected, give up writing");
         return;
@@ -120,7 +120,7 @@ void TcpConnection::connectDestroyed(){
 void TcpConnection::handleRead(TimeStamp receiveTime){
     int saveErrno = 0;
     ssize_t n = inputBuffer_.readFd(channel_->fd(), &saveErrno);
-    LOG_INFO("TcpConnection::handleRead\n");
+    LOG_DEBUG("TcpConnection::handleRead\n");
     if(n > 0){
         if(messageCallback_) messageCallback_(shared_from_this(), &inputBuffer_, receiveTime);
     }else if(n == 0){

@@ -54,7 +54,7 @@ std::string SessionManager::generateSessionId()
 
 void SessionManager::destroySession(const std::string& sessionId)
 {
-    LOG_INFO("SessionManager::destroySession, %s\n", sessionId.c_str());
+    LOG_DEBUG("SessionManager::destroySession, %s\n", sessionId.c_str());
     storage_->remove(sessionId);
 }
 

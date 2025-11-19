@@ -7,7 +7,7 @@ void LoginHandler::handle(const HttpRequest &req, HttpResponse *resp)
     auto contentType = req.getHeader("Content-Type");
     if (contentType.empty() || contentType != "application/json" || req.getBody().empty())
     {
-        LOG_INFO("content %s\n", req.getBody().c_str());
+        LOG_DEBUG("content %s\n", req.getBody().c_str());
         resp->setStatusLine(req.getVersion(), HttpResponse::HttpStatusCode::k400BadRequest, "Bad Request");
         resp->setCloseConnection(true);
         resp->setContentType("application/json");
@@ -36,7 +36,7 @@ void LoginHandler::handle(const HttpRequest &req, HttpResponse *resp)
             session->setValue("userId", std::to_string(userId));
             session->setValue("username", username);
             session->setValue("isLoggedIn", "true");
-            LOG_INFO("session->setValue(isLoggedIn), %s\n", session->getId().c_str());
+            LOG_DEBUG("session->setValue(isLoggedIn), %s\n", session->getId().c_str());
             if (server_->onlineUsers_.find(userId) == server_->onlineUsers_.end() || server_->onlineUsers_[userId] == false)
             {
                 {

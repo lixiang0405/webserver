@@ -124,6 +124,8 @@ private:
     void onRequest(const TcpConnectionPtr&, const HttpRequest&);
 
     void handleRequest(const HttpRequest& req, HttpResponse* resp);
+
+    void send(const TcpConnectionPtr &conn, std::string msg);
     
 private:
     InetAddress                                 listenAddr_; // 监听地址

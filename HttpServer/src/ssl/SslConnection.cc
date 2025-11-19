@@ -50,7 +50,7 @@ SslConnection::SslConnection(const TcpConnectionPtr& conn, SslContext* ctx)
     }
 
     SSL_set_bio(ssl_, readBio_, writeBio_);
-    SSL_set_accept_state(ssl_);  // 设置为服务器模式
+    //SSL_set_accept_state(ssl_);  // 设置为服务器模式
     
     // 设置 SSL 选项
     SSL_set_mode(ssl_, SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER);
@@ -72,11 +72,12 @@ SslConnection::~SslConnection()
 
 void SslConnection::startHandshake() 
 {
+    LOG_DEBUG("SslConnection::startHandshake\n");
     SSL_set_accept_state(ssl_);
     handleHandshake();
 }
 
-void SslConnection::send(const void* data, size_t len) 
+void SslConnection::send(const char* data, size_t len) 
 {
     if (state_ != SSLState::ESTABLISHED) {
         LOG_ERROR("Cannot send data before SSL handshake is complete\n");
@@ -96,42 +97,62 @@ void SslConnection::send(const void* data, size_t len)
     while ((pending = BIO_pending(writeBio_)) > 0) {
         int bytes = BIO_read(writeBio_, buf, 
                            std::min(pending, static_cast<int>(sizeof(buf))));
+        LOG_DEBUG("send %d bytes\n", bytes);
         if (bytes > 0) {
             std::string sendMsg(buf, bytes);
             conn_->send(sendMsg);
         }
+    }
+    if(written < len){
+        send(data + written, len - written);
     }
 }
 
 void SslConnection::onRead(const TcpConnectionPtr& conn, BufferPtr buf, 
                          TimeStamp time) 
 {
+    LOG_DEBUG("SslConnection::onRead\n");
     if (state_ == SSLState::HANDSHAKE) {
         // 将数据写入 BIO，SSL读BIO将解密数据放到SSL缓冲区
         BIO_write(readBio_, buf->peek(), buf->readableBytes());
         buf->retrieve(buf->readableBytes());
         handleHandshake();
-        return;
-    } else if (state_ == SSLState::ESTABLISHED) {
+    }
+    if (state_ == SSLState::ESTABLISHED) {
+        // 将数据写入 BIO，SSL读BIO将解密数据放到SSL缓冲区
+        int written = BIO_write(readBio_, buf->peek(), buf->readableBytes());
+        bool isFull = false;
+        if (written > 0) {
+            buf->retrieve(written);  // 只清除成功写入的数据
+        }else if (BIO_should_retry(readBio_)) {
+            LOG_DEBUG("BIO已满，需要等待可写\n");
+            isFull = true;
+            // BIO已满，需要等待可写
+            // 保持buf中的数据，稍后重试
+        }
         // 解密数据
         char decryptedData[4096];
         //从ssl？中读取解密文件，因为是BIO读外部数据所以是read
         int ret = SSL_read(ssl_, decryptedData, sizeof(decryptedData));
-        if (ret > 0) {
-            // 创建新的 Buffer 存储解密后的数据
-            Buffer decryptedBuffer;
-            decryptedBuffer.append(decryptedData, ret);
-            
+        while (ret > 0) {
             // 调用上层回调处理解密后的数据
-            if (messageCallback_) {
-                messageCallback_(conn, &decryptedBuffer, time);
-            }
+            LOG_DEBUG("ret:%d  SslConnection::onRead %.900s\n", ret, decryptedData);
+            decryptedBuffer_.append(decryptedData, ret);
+            ret = SSL_read(ssl_, decryptedData, sizeof(decryptedData));
+            // 创建新的 Buffer 存储解密后的数据
+        }
+        if(isFull){
+            onRead(conn, buf, time);
+        }
+        if(messageCallback_ && decryptedBuffer_.readableBytes() > 0){
+            messageCallback_(conn, &decryptedBuffer_, time);
         }
     }
 }
 
 void SslConnection::handleHandshake() 
 {
+    LOG_DEBUG("SslConnection::handleHandshake\n");
     int ret = SSL_do_handshake(ssl_);
     
     if (ret == 1) {
@@ -144,6 +165,7 @@ void SslConnection::handleHandshake()
         if (!messageCallback_) {
             LOG_ERROR("No message callback set after SSL handshake\n");
         }
+        sendPendingData();
         return;
     }
     
@@ -152,6 +174,7 @@ void SslConnection::handleHandshake()
         case SSL_ERROR_WANT_READ:
         case SSL_ERROR_WANT_WRITE:
             // 正常的握手过程，需要继续
+            sendPendingData();
             break;
             
         default: {
@@ -165,6 +188,22 @@ void SslConnection::handleHandshake()
         }
     }
 }
+
+// 添加一个辅助函数，用于发送 writeBio_ 中的待发送数据
+void SslConnection::sendPendingData()
+{
+    char buf[4096];
+    int pending;
+    while ((pending = BIO_pending(writeBio_)) > 0) {
+        int bytes = BIO_read(writeBio_, buf, 
+                           std::min(pending, static_cast<int>(sizeof(buf))));
+        if (bytes > 0) {
+            std::string sendMsg(buf, bytes);
+            conn_->send(sendMsg);
+        }
+    }
+}
+
 //修改过
 void SslConnection::onEncrypted(const char* data, size_t len) 
 {

@@ -67,7 +67,7 @@ void HttpServer::setSslConfig(const SslConfig& config)
 
 void HttpServer::onConnection(const TcpConnectionPtr& conn)
 {
-    LOG_INFO("HttpServer::onConnection\n");
+    LOG_DEBUG("HttpServer::onConnection\n");
     if (conn->connected())
     {
         if (useSSL_)
@@ -89,29 +89,41 @@ void HttpServer::onConnection(const TcpConnectionPtr& conn)
     }
 }
 
+void HttpServer::send(const TcpConnectionPtr &conn, std::string msg){
+    if(useSSL_){
+        auto it = sslConns_.find(conn);
+        if (it != sslConns_.end())
+        {
+            it->second->send(msg.c_str(), msg.size());
+        }
+    }else{
+        conn->send("HTTP/1.1 400 Bad Request\r\n\r\n");
+    }
+}
+
 void HttpServer::onMessage(const TcpConnectionPtr &conn,
                            Buffer *buf,
                            TimeStamp receiveTime)
 {
-    LOG_INFO("HttpServer::onMessage\n");
+    LOG_DEBUG("HttpServer::onMessage\n");
     try
     {
         // 这层判断只是代表是否支持ssl
         if (useSSL_)
         {
-            LOG_INFO("onMessage useSSL_ is true\n");
+            LOG_DEBUG("onMessage useSSL_ is true\n");
             // 1.查找对应的SSL连接
             auto it = sslConns_.find(conn);
             if (it != sslConns_.end())
             {
-                LOG_INFO("onMessage sslConns_ is not empty\n");
+                LOG_DEBUG("onMessage sslConns_ is not empty\n");
                 // 2. SSL连接处理数据
-                it->second->onRead(conn, buf, receiveTime);
+                //it->second->onRead(conn, buf, receiveTime);
 
                 // 3. 如果 SSL 握手还未完成，直接返回
                 if (!it->second->isHandshakeCompleted())
                 {
-                    LOG_INFO("onMessage sslConns_ is not empty\n");
+                    LOG_DEBUG("onMessage sslConns_ is not empty\n");
                     return;
                 }
 
@@ -122,7 +134,7 @@ void HttpServer::onMessage(const TcpConnectionPtr &conn,
 
                 // 5. 使用解密后的数据进行HTTP 处理
                 buf = decryptedBuf; // 将 buf 指向解密后的数据
-                LOG_INFO("onMessage decryptedBuf is not empty\n");
+                LOG_DEBUG("onMessage decryptedBuf is not empty\n");
             }
         }
         // HttpContext对象用于解析出buf中的请求报文，并把报文的关键信息封装到HttpRequest对象中
@@ -130,13 +142,13 @@ void HttpServer::onMessage(const TcpConnectionPtr &conn,
         if (!context->parseRequest(buf, receiveTime)) // 解析一个http请求
         {
             // 如果解析http报文过程中出错
-            conn->send("HTTP/1.1 400 Bad Request\r\n\r\n");
+            send(conn, "HTTP/1.1 400 Bad Request\r\n\r\n");
             conn->shutdown();
         }
         // 如果buf缓冲区中解析出一个完整的数据包才封装响应报文
         if (context->gotAll())
         {
-            LOG_INFO("context->gotAll()\n");
+            LOG_DEBUG("context->gotAll()\n");
             onRequest(conn, context->request());
             context->reset();
         }
@@ -145,7 +157,7 @@ void HttpServer::onMessage(const TcpConnectionPtr &conn,
     {
         // 捕获异常，返回错误信息
         LOG_ERROR("Exception in onMessage: %s\n", e.what());
-        conn->send("HTTP/1.1 400 Bad Request\r\n\r\n");
+        send(conn, "HTTP/1.1 400 Bad Request\r\n\r\n");
         conn->shutdown();
     }
 }
@@ -165,13 +177,13 @@ void HttpServer::onRequest(const TcpConnectionPtr &conn, const HttpRequest &req)
     response.appendToBuffer(&buf);
     // 打印完整的响应内容用于调试
     std::string responseStr = buf.retrieveAllAsString();
-    LOG_INFO("Sending response: %s\n", responseStr.c_str());
+    LOG_DEBUG("Sending response: %s\n", responseStr.c_str());
 
-    conn->send(responseStr);
+    send(conn, responseStr);
     // 如果是短连接的话，返回响应报文后就断开连接
     if (response.closeConnection())
     {
-        LOG_INFO("conn->shutdown()\n");
+        LOG_DEBUG("conn->shutdown()\n");
         conn->shutdown();
     }
 }
@@ -188,8 +200,8 @@ void HttpServer::handleRequest(const HttpRequest &req, HttpResponse *resp)
         // 路由处理
         if (!router_.route(mutableReq, resp))
         {
-            LOG_INFO("请求的啥，url：%d, %s\n", static_cast<int>(req.method()), req.path().c_str());
-            LOG_INFO("未找到路由，返回404\n");
+            LOG_DEBUG("请求的啥，url：%d, %s\n", static_cast<int>(req.method()), req.path().c_str());
+            LOG_DEBUG("未找到路由，返回404\n");
             resp->setStatusCode(HttpResponse::HttpStatusCode::k404NotFound);
             resp->setStatusMessage("Not Found");
             resp->setCloseConnection(true);

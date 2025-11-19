@@ -3,6 +3,7 @@
 
 void AiGameStartHandler::handle(const HttpRequest &req, HttpResponse *resp)
 {
+    LOG_DEBUG("AiGameStartHandler::handle\n");
     auto session = server_->getSessionManager()->getSession(req, resp);
     if (session->getValue("isLoggedIn") != "true")
     {

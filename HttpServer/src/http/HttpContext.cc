@@ -7,7 +7,7 @@ bool HttpContext::parseRequest(Buffer *buf, TimeStamp receiveTime){
     bool ok = true;
     bool hasMore = true;
     std::string msg(buf->peek(), buf->readableBytes());
-    LOG_INFO("HttpContext::parseRequest ? %.900s\n", msg.c_str());
+    LOG_DEBUG("HttpContext::parseRequest ? %.900s\n", msg.c_str());
     while (hasMore)
     {
         if (state_ == kExpectRequestLine) {

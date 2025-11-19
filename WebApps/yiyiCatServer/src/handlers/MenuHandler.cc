@@ -7,7 +7,7 @@ void MenuHandler::handle(const HttpRequest &req, HttpResponse *resp)
     {
         // 检查用户是否已登录
         auto session = server_->getSessionManager()->getSession(req, resp);
-        LOG_INFO("session->getValue(\"isLoggedIn\") = %s\n", session->getValue("isLoggedIn").c_str());
+        LOG_DEBUG("session->getValue(\"isLoggedIn\") = %s\n", session->getValue("isLoggedIn").c_str());
         if (session->getValue("isLoggedIn") != "true")
         {
             // 用户未登录，返回未授权错误

@@ -23,7 +23,7 @@ public:
     ~SslConnection();
 
     void startHandshake();
-    void send(const void* data, size_t len);
+    void send(const char* data, size_t len);
     void onRead(const TcpConnectionPtr& conn, BufferPtr buf, TimeStamp time);
     bool isHandshakeCompleted() const { return state_ == SSLState::ESTABLISHED; }
     Buffer* getDecryptedBuffer() { return &decryptedBuffer_; }
@@ -39,6 +39,7 @@ private:
     void onDecrypted(const char* data, size_t len);
     SSLError getLastError(int ret);
     void handleError(SSLError error);
+    void sendPendingData();
 
     SSL*                ssl_; // SSL 连接
     SslContext*         ctx_; // SSL 上下文
