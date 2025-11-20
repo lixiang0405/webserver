@@ -68,7 +68,29 @@ void YiyiCatServer::initializeRouter()
     httpServer_.Get("/", std::make_shared<EntryHandler>(this));
     httpServer_.Get("/entry", std::make_shared<EntryHandler>(this));
     // 登录
-    httpServer_.Post("/login", std::make_shared<LoginHandler>(this));
+    auto loginHandler = std::make_shared<LoginHandler>(this);
+    httpServer_.Post("/login", loginHandler);
+    loginHandler->setUnLoginCallBack(
+        [this](const HttpRequest& req, HttpResponse* resp, int userId){
+            LOG_INFO("UnLoginCallBack\n");
+
+            // 清除会话数据
+            auto session = this->getSessionManager()->getSession(userIdSessionId_[userId]);
+            LOG_INFO("cur sessiontId :%s\n", userIdSessionId_[userId].c_str());
+            session->clear();
+            // 销毁会话
+            this->getSessionManager()->destroySession(session->getId());
+            {   // 释放资源
+                std::lock_guard<std::mutex> lock(this->mutexForOnlineUsers_);
+                this->onlineUsers_.erase(userId);
+            }
+            {
+                std::lock_guard<std::mutex> lock(this->mutexForAiGames_);
+                this->aiGames_.erase(userId);
+            }
+
+        }
+    );
     // 注册
     httpServer_.Post("/register", std::make_shared<RegisterHandler>(this));
     // 登出

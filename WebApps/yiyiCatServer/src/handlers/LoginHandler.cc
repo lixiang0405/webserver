@@ -1,4 +1,5 @@
 #include "LoginHandler.h"
+#include "Logger.h"
 
 void LoginHandler::handle(const HttpRequest &req, HttpResponse *resp)
 {
@@ -26,19 +27,22 @@ void LoginHandler::handle(const HttpRequest &req, HttpResponse *resp)
         int userId = queryUserId(username, password);
         if (userId != -1)
         {
-            // 获取会话
-            auto session = server_->getSessionManager()->getSession(req, resp);
-            // 会话都不是同一个会话，因为会话判断是不是同一个会话是通过请求报文中的cookie来判断的
-            // 所以不同页面的访问是不可能是相同的会话的，只有该页面前面访问过服务端，才会有会话记录
-            // 那么判断用户是否在其他地方登录中不能通过会话来判断
-            
-            // 在会话中存储用户信息
-            session->setValue("userId", std::to_string(userId));
-            session->setValue("username", username);
-            session->setValue("isLoggedIn", "true");
-            LOG_DEBUG("session->setValue(isLoggedIn), %s\n", session->getId().c_str());
             if (server_->onlineUsers_.find(userId) == server_->onlineUsers_.end() || server_->onlineUsers_[userId] == false)
             {
+                // 获取会话
+                auto session = server_->getSessionManager()->getSession(req, resp);
+                // 会话都不是同一个会话，因为会话判断是不是同一个会话是通过请求报文中的cookie来判断的
+                // 所以不同页面的访问是不可能是相同的会话的，只有该页面前面访问过服务端，才会有会话记录
+                // 那么判断用户是否在其他地方登录中不能通过会话来判断
+                
+                // 在会话中存储用户信息
+                session->setValue("userId", std::to_string(userId));
+                session->setValue("username", username);
+                session->setValue("isLoggedIn", "true");
+                LOG_INFO("session->setValue(isLoggedIn), %s\n", session->getId().c_str());
+                {
+                    server_->setUserIdSessionId(userId, session->getId());
+                }
                 {
                     std::lock_guard<std::mutex> lock(server_->mutexForOnlineUsers_);
                     server_->onlineUsers_[userId] = true;
@@ -63,6 +67,45 @@ void LoginHandler::handle(const HttpRequest &req, HttpResponse *resp)
             else
             {
                 // FIXME: 当前该用户正在其他地方登录中，将原有登录用户强制下线更好
+                if(unLoginCallBack_){
+                    unLoginCallBack_(req, resp, userId);
+                    // 获取会话
+                    auto session = server_->getSessionManager()->getSession(req, resp);
+                    // 会话都不是同一个会话，因为会话判断是不是同一个会话是通过请求报文中的cookie来判断的
+                    // 所以不同页面的访问是不可能是相同的会话的，只有该页面前面访问过服务端，才会有会话记录
+                    // 那么判断用户是否在其他地方登录中不能通过会话来判断
+                    
+                    // 在会话中存储用户信息
+                    session->setValue("userId", std::to_string(userId));
+                    session->setValue("username", username);
+                    session->setValue("isLoggedIn", "true");
+                    LOG_INFO("session->setValue(isLoggedIn), %s\n", session->getId().c_str());
+                    {
+                        server_->setUserIdSessionId(userId, session->getId());
+                    }
+                    {
+                        std::lock_guard<std::mutex> lock(server_->mutexForOnlineUsers_);
+                        server_->onlineUsers_[userId] = true;
+                    }
+                    
+                    // 更新历史最高在线人数
+                    server_->updateMaxOnline(server_->onlineUsers_.size());
+                    // 用户存在登录成功
+                    // 封装json 数据。
+                    json successResp;
+                    successResp["success"] = true;
+                    successResp["userId"] = userId;
+                    std::string successBody = successResp.dump(4);
+
+                    resp->setStatusLine(req.getVersion(), HttpResponse::HttpStatusCode::k200Ok, "OK");
+                    resp->setCloseConnection(false);
+                    resp->setContentType("application/json");
+                    resp->setContentLength(successBody.size());
+                    resp->setBody(successBody);
+                    return;
+                }else{
+                    LOG_INFO("unLoginCallBack_ is null\n");
+                }
                 // 不允许重复登录，
                 json failureResp;
                 failureResp["success"] = false;

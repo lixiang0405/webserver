@@ -35,6 +35,9 @@ TcpConnection::TcpConnection(EventLoop *loop, const std::string &name, int sockf
 
 TcpConnection::~TcpConnection(){
     LOG_INFO("TcpConnection::dtor[%s] at fd=%d state=%d\n", name_.c_str(), channel_->fd(), (int)state_);
+    setState(kDisconnected);
+    channel_->disableAll();
+    channel_->remove();
 }
 
 void TcpConnection::send(const std::string &buff){

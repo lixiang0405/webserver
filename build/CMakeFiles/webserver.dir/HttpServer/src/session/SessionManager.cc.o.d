@@ -220,6 +220,11 @@ CMakeFiles/webserver.dir/HttpServer/src/session/SessionManager.cc.o: \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
  /mnt/c/Users/lixia/webserver/mymuduo/include/Logger.h \
  /mnt/c/Users/lixia/webserver/mymuduo/include/noncopyable.h \
  /usr/include/c++/13/iomanip /usr/include/c++/13/locale \

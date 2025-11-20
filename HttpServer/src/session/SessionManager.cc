@@ -32,9 +32,40 @@ std::shared_ptr<Session> SessionManager::getSession(const HttpRequest& req, Http
     {
         session->setManager(this); // 为现有会话设置管理器
     }
-
+    
     session->refresh();
     storage_->save(session);  // 这里可能有问题，需要确保正确保存会话
+    if(getSessionCallBack_){
+        getSessionCallBack_(sessionId, session);
+    }
+    return session;
+}
+
+std::shared_ptr<Session> SessionManager::getSession(std::string sessionId)
+{   
+    
+    std::shared_ptr<Session> session;
+
+    if (!sessionId.empty())
+    {
+        session = storage_->load(sessionId);
+    }
+
+    if (!session || session->isExpired())
+    {
+
+    }
+    else 
+    {
+        session->setManager(this); // 为现有会话设置管理器
+    }
+    
+    session->refresh();
+    storage_->save(session);  // 这里可能有问题，需要确保正确保存会话
+
+    if(getSessionCallBack_){
+        getSessionCallBack_(sessionId, session);
+    }
     return session;
 }
 

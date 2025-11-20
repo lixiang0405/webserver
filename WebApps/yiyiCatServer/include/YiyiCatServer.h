@@ -90,6 +90,11 @@ private:
         }
         return 0;
     }
+
+    void setUserIdSessionId(int userId, std::string sessionId){
+        LOG_INFO("set userId:%d SessionId%s\n", userId, sessionId.c_str());
+        userIdSessionId_[userId] = sessionId;
+    }
     
 private:
     friend class EntryHandler;
@@ -120,4 +125,6 @@ private:
     std::mutex                                       mutexForOnlineUsers_; 
     // 最高在线人数
     std::atomic<int>                                 maxOnline_;
+    std::unordered_map<int, std::string>             userIdSessionId_;
+                              
 };

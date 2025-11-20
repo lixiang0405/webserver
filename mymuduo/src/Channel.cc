@@ -42,7 +42,7 @@ void Channel::handleEvent(TimeStamp receiveTime){
 }
 
 void Channel::handleEventWithGuard(TimeStamp receiveTime){
-    LOG_INFO("Channel (File descriptor:%d, Index:%d) handle event %d\n",fd_ , index_, revent_);
+    LOG_DEBUG("Channel (File descriptor:%d, Index:%d) handle event %d\n",fd_ , index_, revent_);
     
     if((revent_ & EPOLLHUP) && !(revent_ & EPOLLIN)){
         if(closeCallback_){
